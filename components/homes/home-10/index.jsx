@@ -184,7 +184,7 @@ export default function Home10({ onePage = false, dark = false }) {
         className="page-section bg-dark-1 light-content"
         style={{
           backgroundImage:
-            "url(/assets/images/full-width-images/section-bg-2.jpg)",
+            "url(/assets/images/2.jpg)",
         }}
       ><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       </section>
