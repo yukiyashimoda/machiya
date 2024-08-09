@@ -20,7 +20,7 @@ const ParallaxContainer = dynamic(
 );
 
 export default function ModernBlogSinglePage({ params }) {
-  const [post, setPost] = useState(null);
+  const [post, setPost] = useState(null); // 単一の投稿のために post を使用
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -44,28 +44,12 @@ export default function ModernBlogSinglePage({ params }) {
     fetchPost();
   }, [params.id]); // params.idが変更された場合に再取得する
 
-  useEffect(() => {
-    const handleMainNav = () => {
-      const mainNav = document.querySelector(".main-nav");
-      if (mainNav) {
-        // mainNavが存在する場合にのみクラスリストを操作する
-        mainNav.classList.add("initialized");
-      }
-    };
-
-    handleMainNav();
-  }, []);
-
-  useEffect(() => {
-    console.log("Post Data:", post);
-  }, [post]);
-
   if (loading) {
     return <p>Loading...</p>; // ローディング中の表示
   }
 
   if (!post) {
-    return <p>投稿が見つかりませんでした。</p>; // ブログが見つからなかった場合の表示
+    return <p>投稿が見つかりませんでした。</p>; // 投稿が見つからなかった場合の表示
   }
 
   // publishedAtの日付をフォーマット
@@ -173,10 +157,10 @@ export default function ModernBlogSinglePage({ params }) {
                     <div className="clearfix mt-40">
                       <a href="#" className="blog-item-more circle left">
                         <i className="mi-chevron-left" />
-                        &nbsp;Prev post
+                        &nbsp;Prev posts
                       </a>
                       <a href="#" className="blog-item-more circle right">
-                        Next post&nbsp;
+                        Next posts&nbsp;
                         <i className="mi-chevron-right" />
                       </a>
                     </div>
