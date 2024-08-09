@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { client } from "@/libs/client"; // MicroCMSのクライアントをインポート
 import Image from "next/image";
-import Slider3 from "@/components/blog/sliders/Slider3";
 import Widget1 from "@/components/blog/widgets/Widget1";
 import Header10 from "@/components/headers/Header10";
 import { strongMultiPages } from "@/data/menu";
@@ -20,11 +19,11 @@ const ParallaxContainer = dynamic(
 );
 
 export default function ModernBlogSinglePage({ params }) {
-  const [post, setPosts] = useState(null);
+  const [post, setPost] = useState(null); // 単一の投稿のために post を使用
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchPosts = async () => {
+    const fetchPost = async () => {
       try {
         // MicroCMS APIからデータを取得
         const response = await client.get({
@@ -32,8 +31,11 @@ export default function ModernBlogSinglePage({ params }) {
           contentId: params.id, // URLのパラメータからIDを取得
         });
 
+        // レスポンスの内容を確認
+        console.log('API Response:', response);
+
         // 取得したデータを設定
-        setPosts(response);
+        setPost(response);
         setLoading(false); // ローディングを終了
       } catch (error) {
         console.error("データの取得に失敗しました:", error);
@@ -41,16 +43,15 @@ export default function ModernBlogSinglePage({ params }) {
       }
     };
 
-    fetchPosts();
+    fetchPost();
   }, [params.id]); // params.idが変更された場合に再取得する
 
- 
   if (loading) {
     return <p>Loading...</p>; // ローディング中の表示
   }
 
   if (!post) {
-    return <p>投稿が見つかりませんでした。</p>; // ブログが見つからなかった場合の表示
+    return <p>投稿が見つかりませんでした。</p>; // 投稿が見つからなかった場合の表示
   }
 
   // publishedAtの日付をフォーマット
@@ -64,7 +65,7 @@ export default function ModernBlogSinglePage({ params }) {
     <>
       <div className="theme-modern">
         <div className="page" id="top">
-          <nav className="main-nav dark transparent stick-fixed wow-menubar">
+          <nav className="main-nav dark stick-fixed wow-menubar">
             <Header10 links={strongMultiPages} />
           </nav>
           <main id="main">
@@ -75,7 +76,7 @@ export default function ModernBlogSinglePage({ params }) {
               }}
               id="home"
             >
-              <div className="container position-relative z-index-1">
+              <div className="container position-relative">
                 <div className="mb-20">
                   <div className="mb-10">
                     <Link
@@ -121,14 +122,7 @@ export default function ModernBlogSinglePage({ params }) {
                 data-wow-offset={0}
               >
                 <div className="full-wrapper text-end">
-                  <span className="">
-                    <Image
-                      src={post.photo?.url || "/assets/images/noren.png"}
-                      alt="Scroll Down"
-                      width={50}
-                      height={73}
-                    />
-                  </span>
+                  
                 </div>
               </div>
               {/* End Scroll Down */}
@@ -144,7 +138,14 @@ export default function ModernBlogSinglePage({ params }) {
                       <div className="blog-item-body">
                         {/* Media Gallery */}
                         <div className="blog-media mb-40 mb-xs-30">
-                          <Slider3 />
+                        <span className="">
+                    <Image
+                      src={post.photo?.url || "/assets/images/machiya_logo.png"}
+                      alt="Scroll Down"
+                      width={500}
+                      height={700}
+                    />
+                  </span>
                         </div>
                         <p
                           className="font-alt"
