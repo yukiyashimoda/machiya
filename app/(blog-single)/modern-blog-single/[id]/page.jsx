@@ -20,11 +20,11 @@ const ParallaxContainer = dynamic(
 );
 
 export default function ModernBlogSinglePage({ params }) {
-  const [post, setPost] = useState(null); // 単一の投稿のために post を使用
+  const [post, setPosts] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchPost = async () => {
+    const fetchPosts = async () => {
       try {
         // MicroCMS APIからデータを取得
         const response = await client.get({
@@ -33,7 +33,7 @@ export default function ModernBlogSinglePage({ params }) {
         });
 
         // 取得したデータを設定
-        setPost(response);
+        setPosts(response);
         setLoading(false); // ローディングを終了
       } catch (error) {
         console.error("データの取得に失敗しました:", error);
@@ -41,15 +41,16 @@ export default function ModernBlogSinglePage({ params }) {
       }
     };
 
-    fetchPost();
+    fetchPosts();
   }, [params.id]); // params.idが変更された場合に再取得する
 
+ 
   if (loading) {
     return <p>Loading...</p>; // ローディング中の表示
   }
 
   if (!post) {
-    return <p>投稿が見つかりませんでした。</p>; // 投稿が見つからなかった場合の表示
+    return <p>投稿が見つかりませんでした。</p>; // ブログが見つからなかった場合の表示
   }
 
   // publishedAtの日付をフォーマット
@@ -157,10 +158,10 @@ export default function ModernBlogSinglePage({ params }) {
                     <div className="clearfix mt-40">
                       <a href="#" className="blog-item-more circle left">
                         <i className="mi-chevron-left" />
-                        &nbsp;Prev posts
+                        &nbsp;Prev post
                       </a>
                       <a href="#" className="blog-item-more circle right">
-                        Next posts&nbsp;
+                        Next post&nbsp;
                         <i className="mi-chevron-right" />
                       </a>
                     </div>
