@@ -1,6 +1,3 @@
-
-
-
 import React, { useEffect, useState } from "react";
 import { client } from "@/libs/client"; // MicroCMSのクライアントをインポート
 import Image from "next/image";
@@ -73,7 +70,7 @@ export default function Blog() {
                   <Image
                     width={700}
                     height={479}
-                    src={post.photo?.url || "/default-image.jpg"} // 画像がない場合はデフォルトの画像を使用
+                    src={post.photo?.url || "/assets/images/machiya_logo.png"} // 画像がない場合はデフォルトの画像を使用
                     alt={post.title || "Image Description"}
                   />
                 </Link>
