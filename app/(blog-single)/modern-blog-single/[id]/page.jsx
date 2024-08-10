@@ -174,7 +174,7 @@ export default function ModernBlogSinglePage({ params }) {
                           className="blog-item-more circle left"
                         >
                           <i className="mi-chevron-left" />
-                          &nbsp;Prev post
+                          &nbsp;次の投稿
                         </Link>
                       )}
                       {nextPost && (
@@ -182,7 +182,7 @@ export default function ModernBlogSinglePage({ params }) {
                           href={`/modern-blog-single/${nextPost.id}`}
                           className="blog-item-more circle right"
                         >
-                          Next post&nbsp;
+                          前の投稿&nbsp;
                           <i className="mi-chevron-right" />
                         </Link>
                       )}
