@@ -42,7 +42,7 @@ export default function Blog() {
           
           <div className="local-scroll">
             <Link
-              href={`/strong-blog`}
+              href={`/archive`}
               className="btn btn-mod btn-white btn-large btn-round btn-hover-anim"
             >
               <span>もっと見る</span>
