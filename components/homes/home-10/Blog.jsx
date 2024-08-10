@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { client } from "@/libs/client"; // MicroCMSのクライアントをインポート
 import Image from "next/image";
 import Link from "next/link";
+import dayjs from "dayjs"; // 日時フォーマット用のライブラリをインポート
+import { FaPen } from "react-icons/fa"; // ペンのアイコンをインポート
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
@@ -14,7 +16,7 @@ export default function Blog() {
         const response = await client.get({
           endpoint: "news", // あなたのエンドポイントに応じて変更
         });
-        setPosts(response.contents);
+        setPosts(response.contents.slice(0, 3)); // 最新の投稿3つのみ取得
         setLoading(false);
       } catch (error) {
         console.error("データの取得に失敗しました:", error);
@@ -80,7 +82,10 @@ export default function Blog() {
                   {post.title}
                 </Link>
               </h3>
-              <div className="post-prev-2-info">{post.publishedAt}</div>
+              <div className="post-prev-2-info">
+                <FaPen style={{ marginRight: "8px" }} />
+                {dayjs(post.publishedAt).format("YYYY年MM月DD日")}
+              </div>
             </div>
           </div>
         ))}
@@ -90,4 +95,3 @@ export default function Blog() {
     </div>
   );
 }
-

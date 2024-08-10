@@ -20,22 +20,25 @@ const ParallaxContainer = dynamic(
 
 export default function ModernBlogSinglePage({ params }) {
   const [post, setPost] = useState(null); // 単一の投稿のために post を使用
+  const [posts, setPosts] = useState([]); // 全投稿を格納するための配列
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        // MicroCMS APIからデータを取得
+        // すべての投稿を取得
         const response = await client.get({
-          endpoint: "news", // あなたのエンドポイントに応じて変更
-          contentId: params.id, // URLのパラメータからIDを取得
+          endpoint: "news",
         });
 
-        // レスポンスの内容を確認
-        console.log('API Response:', response);
+        setPosts(response.contents);
 
-        // 取得したデータを設定
-        setPost(response);
+        // URLのパラメータからIDを取得して該当する投稿を設定
+        const currentPost = response.contents.find(
+          (content) => content.id === params.id
+        );
+
+        setPost(currentPost);
         setLoading(false); // ローディングを終了
       } catch (error) {
         console.error("データの取得に失敗しました:", error);
@@ -61,11 +64,18 @@ export default function ModernBlogSinglePage({ params }) {
     day: "numeric",
   });
 
+  // 現在の投稿のインデックスを取得
+  const currentIndex = posts.findIndex((p) => p.id === post.id);
+
+  // Prev/Next Postを設定
+  const prevPost = posts[currentIndex - 1];
+  const nextPost = posts[currentIndex + 1];
+
   return (
     <>
       <div className="theme-modern">
         <div className="page" id="top">
-          <nav className="main-nav dark stick-fixed ">
+          <nav className="main-nav dark stick-fixed">
             <Header10 links={strongMultiPages} />
           </nav>
           <main id="main">
@@ -89,12 +99,12 @@ export default function ModernBlogSinglePage({ params }) {
                   </div>
                   <hr className="white mt-0 mb-0" />
                 </div>
-                <h1 className="section-title-large font-alt uppercase mb-0  fadeRotateIn">
+                <h1 className="section-title-large font-alt uppercase mb-0 fadeRotateIn">
                   {post.title}
                 </h1>
                 {/* Author, Categories, Comments */}
                 <div
-                  className="blog-item-data mt-30 mt-sm-10 mb-0  fadeInUp"
+                  className="blog-item-data mt-30 mt-sm-10 mb-0 fadeInUp"
                   data-wow-delay="0.2s"
                 >
                   <div className="d-inline-block me-3">
@@ -121,9 +131,7 @@ export default function ModernBlogSinglePage({ params }) {
                 className="local-scroll scroll-down-wrap-2 d-none d-lg-block wow fadeInUp"
                 data-wow-offset={0}
               >
-                <div className="full-wrapper text-end">
-                  
-                </div>
+                <div className="full-wrapper text-end"></div>
               </div>
               {/* End Scroll Down */}
             </ParallaxContainer>
@@ -138,34 +146,46 @@ export default function ModernBlogSinglePage({ params }) {
                       <div className="blog-item-body">
                         {/* Media Gallery */}
                         <div className="blog-media mb-40 mb-xs-30">
-                        <span className="">
-                    <Image
-                      src={post.photo?.url || "/assets/images/machiya_logo.png"}
-                      alt="Scroll Down"
-                      width={500}
-                      height={700}
-                    />
-                  </span>
+                          <span className="">
+                            <Image
+                              src={
+                                post.photo?.url ||
+                                "/assets/images/machiya_logo.png"
+                              }
+                              alt="Scroll Down"
+                              width={500}
+                              height={700}
+                            />
+                          </span>
                         </div>
                         <p
                           className="font-alt"
                           dangerouslySetInnerHTML={{ __html: post.body }}
                         />
-                        
                       </div>
                     </div>
                     {/* End Post */}
 
                     {/* Prev/Next Post */}
                     <div className="clearfix mt-40">
-                      <a href="#" className="blog-item-more circle left">
-                        <i className="mi-chevron-left" />
-                        &nbsp;Prev post
-                      </a>
-                      <a href="#" className="blog-item-more circle right">
-                        Next post&nbsp;
-                        <i className="mi-chevron-right" />
-                      </a>
+                      {prevPost && (
+                        <Link
+                          href={`/modern-blog-single/${prevPost.id}`}
+                          className="blog-item-more circle left"
+                        >
+                          <i className="mi-chevron-left" />
+                          &nbsp;Prev post
+                        </Link>
+                      )}
+                      {nextPost && (
+                        <Link
+                          href={`/modern-blog-single/${nextPost.id}`}
+                          className="blog-item-more circle right"
+                        >
+                          Next post&nbsp;
+                          <i className="mi-chevron-right" />
+                        </Link>
+                      )}
                     </div>
                     {/* End Prev/Next Post */}
                   </div>
