@@ -8,6 +8,7 @@ import { strongMultiPages } from "@/data/menu";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+import Gallery1 from "../../../components/gallery/Gallery1";
 const ParallaxContainer = dynamic(
   () => import("@/components/common/ParallaxContainer"),
   {
@@ -18,9 +19,9 @@ const dark = false;
 const onePage = false;
 export const metadata = {
   title:
-    "Strong Services || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "menu",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "当店のお料理をご紹介します。",
 };
 export default function StrongServicesPage() {
   return (
@@ -44,7 +45,7 @@ export default function StrongServicesPage() {
                 <div className="home-content text-center">
                   <h1 className="hs-title-7 mb-0">
                     <span className="wow charsAnimIn-2" data-splitting="chars">
-                      Our <span className="font-alt">Services</span>
+                       <span className="font-alt">お品書き</span>
                     </span>
                   </h1>
                 </div>
@@ -66,88 +67,9 @@ export default function StrongServicesPage() {
             </section>
             <section className="pt-30">
               <div id="paddingRightContainer" className="container" />
-              <div className="row g-0">
-                <div className="col-lg-6 mt-n30 mt-md-0 mb-30 mb-md-0">
-                  <div
-                    id="paddingRight"
-                    className={`split-column-right ${
-                      dark ? "bg-dark-2" : "bg-dark-1"
-                    } light-content position-relative d-flex align-items-center`}
-                    data-rellax-y=""
-                    data-rellax-speed="0.5"
-                    data-rellax-percentage="0.5"
-                  >
-                    {/* Decorative Dots */}
-                    <div className="position-absolute top-0 start-0 pt-2 ps-2 opacity-02">
-                      <Image
-                        width={192}
-                        height={222}
-                        src="/assets/images/demo-strong/decoration.svg"
-                        alt=""
-                      />
-                    </div>
-                    {/* End Decorative Dots */}
-                    <div>
-                      <h2 className="section-title mb-30">
-                        Responsive, <span className="font-alt">flexible</span>{" "}
-                        and customizable.
-                      </h2>
-                      <p className="mb-50">
-                        Phasellus nisl lectus, tincidunt eget fermentum quis,
-                        accumsan a sem efficitur augue ac ex maximus, eget
-                        viverra sem aliquam. Donec blandit ante nunc, nec
-                        pellentesque arcu egestas a lorem.
-                      </p>
-                      {/* Features List */}
-                      <div className="row mt-n20">
-                        {/* Features List Item */}
-                        {featuresListData.map((item, index) => (
-                          <div
-                            key={index}
-                            className="col-sm-6 col-lg-12 col-xl-6 d-flex mt-20"
-                          >
-                            <div className="features-list-icon">
-                              <i className="mi-check" />
-                            </div>
-                            <div className="features-list-text">
-                              {item.text}
-                            </div>
-                          </div>
-                        ))}
-                        {/* End Features List Item */}
-                      </div>
-                      {/* End Features List */}
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6 d-flex align-items-stretch order-lg-first">
-                  <div className="split-image-left">
-                    <Image
-                      width={1100}
-                      height={930}
-                      src="/assets/images/demo-strong/split-image-2.jpg"
-                      alt="Image Description"
-                    />
-                    {/* Circle Text */}
-                    <div className="position-absolute bottom-0 start-0 ps-4 pb-4 d-none d-sm-block">
-                      <Image
-                        src="/assets/images/demo-strong/circle-text.svg"
-                        width={138}
-                        height={138}
-                        alt="Image Description"
-                      />
-                    </div>
-                    {/* End Circle Text */}
-                  </div>
-                </div>
+              <div className="row g-0 mb-30">
+                <Gallery1 />
               </div>
-            </section>
-            <section
-              className={`page-section overflow-hidden  ${
-                dark ? "bg-dark-1 light-content" : ""
-              }`}
-            >
-              <Features />
             </section>
           </main>
 

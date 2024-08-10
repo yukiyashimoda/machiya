@@ -12,22 +12,22 @@ export default function Hero1() {
 
         <div className="local-scroll wow fadeInUpShort" data-wow-delay="0.57s">
           <a
-            href="https://tabelog.com/hokkaido/A0101/A010104/1078722/"
+            href="https://maps.app.goo.gl/CWg7GbWtVzE41GoG9"
             className="link-hover-anim link-circle-1 align-middle"
             data-link-animate="y"
           >
             <span className="font-alt link-strong link-strong-unhovered">
-              ご予約はこちら{" "}
+              地図を開く{" "}
               <i
                 className="mi-arrow-right size-18 align-middle"
                 aria-hidden="true"
               ></i>
             </span>
             <span
-              className="link-strong link-strong-hovered"
+              className="font-alt link-strong link-strong-hovered"
               aria-hidden="true"
             >
-              ご予約はこちら{" "}
+              地図を開く{" "}
               <i
                 className="mi-arrow-right size-18 align-middle"
                 aria-hidden="true"

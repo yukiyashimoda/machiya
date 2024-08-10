@@ -41,7 +41,7 @@ export default function Header10({ links }) {
           {links[0].href.includes("/") ? (
             <li>
               <Link
-                href={links[links.length - 1].href}
+                href="/contact"
                 className="opacity-1 no-hover"
               >
                 <span className="link-hover-anim" data-link-animate="y">
