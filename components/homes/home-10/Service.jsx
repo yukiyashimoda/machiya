@@ -6,7 +6,7 @@ export default function Service() {
     <>
     
       <ul
-        className="nav nav-tabs tpl-alt-tabs mb-20 mb-xs-0 wow fadeInUp"
+        className="nav nav-tabs tpl-alt-tabs mb-20 mb-xs-0 fadeInUp"
         role="tablist"
       >
         <li className="nav-item" role="presentation">
@@ -63,7 +63,7 @@ export default function Service() {
         >
           <div className="row">
             <div
-              className="col-lg-4 mb-md-40 mb-xs-30 wow linesAnimIn"
+              className="col-lg-4 mb-md-40 mb-xs-30 linesAnimIn"
               data-splitting="lines"
             >
               <blockquote className="mt-0 mb-0">
@@ -76,7 +76,7 @@ export default function Service() {
               </blockquote>
             </div>
             <div
-              className="col-md-6 col-lg-4 mb-sm-30 wow linesAnimIn"
+              className="col-md-6 col-lg-4 mb-sm-30 linesAnimIn"
               data-splitting="lines"
             >
              <ul class="food-menu font-alt" >
@@ -117,7 +117,7 @@ export default function Service() {
              </ul>
             </div>
             <div
-              className="col-md-6 col-lg-4 wow linesAnimIn footer-text"
+              className="col-md-6 col-lg-4 linesAnimIn footer-text"
               data-splitting="lines"
             >
               <ul class="food-menu font-alt" >

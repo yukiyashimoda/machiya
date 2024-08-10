@@ -69,7 +69,7 @@ export default function Home10({ onePage = false, dark = false }) {
                     height={692}
                     src="/assets/images/demo-strong/section-image-1.png"
                     alt="Image description"
-                    className="wow scaleOutIn"
+                    className=" scaleOutIn"
                     data-wow-duration="1.2s"
                   />
                 </div>
@@ -79,7 +79,7 @@ export default function Home10({ onePage = false, dark = false }) {
                     height={692}
                     src="/assets/images/demo-strong/section-image-2.png"
                     alt="Image description"
-                    className="wow scaleOutIn"
+                    className="scaleOutIn"
                     data-wow-duration="1.2s"
                     data-wow-offset="0"
                   />
@@ -88,7 +88,7 @@ export default function Home10({ onePage = false, dark = false }) {
             </div>
 
             <div className="col-sm-8 col-lg-6 col-xl-4 offset-xl-1 mt-0">
-              <div className="wow linesAnimIn" data-splitting="lines">
+              <div className="linesAnimIn" data-splitting="lines">
                 <p className="lead font-alt mt-5 mb-5 text-sm font-bold">
                 市電ロープウェイ入口駅1分。<br />国産鰻を使用。<br />昼はふっくら鰻重を、<br />夜は鰻の逸品と銘酒を<br />ご堪能ください。
                 </p>
@@ -97,7 +97,7 @@ export default function Home10({ onePage = false, dark = false }) {
                 </p>
               </div>
 
-              <div className="local-scroll wow fadeInUp" data-wow-offset="0">
+              <div className="local-scroll fadeInUp" data-wow-offset="0">
                 {onePage ? (
                   <>
                     <a
@@ -133,7 +133,7 @@ export default function Home10({ onePage = false, dark = false }) {
                   height={894}
                   src="/assets/images/demo-strong/section-image-3.png"
                   alt="Image description"
-                  className="wow scaleOutIn"
+                  className="scaleOutIn"
                   data-wow-duration="1.2s"
                 />
               </div>

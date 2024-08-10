@@ -6,11 +6,11 @@ export default function Hero1() {
     <div className="container min-height-100vh d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120">
       {/* Home Section Content */}
       <div className="home-content text-center">
-      <span className="wow charsAnimIn-1" data-splitting="chars">
+      <span className="charsAnimIn-1" data-splitting="chars">
         <img src="/assets/images/machiyalogo.png" alt="Test" />
       </span>
 
-        <div className="local-scroll wow fadeInUpShort" data-wow-delay="0.57s">
+        <div className="local-scroll fadeInUpShort" data-wow-delay="0.57s">
           <a
             href="https://maps.app.goo.gl/CWg7GbWtVzE41GoG9"
             className="link-hover-anim link-circle-1 align-middle"
@@ -39,7 +39,7 @@ export default function Hero1() {
       {/* End Home Section Content */}
       {/* Scroll Down */}
       <div
-        className="local-scroll scroll-down-3-wrap wow fadeInUp"
+        className="local-scroll scroll-down-3-wrap fadeInUp"
         data-wow-offset={0}
       >
         <a href="#about" className="scroll-down-3">

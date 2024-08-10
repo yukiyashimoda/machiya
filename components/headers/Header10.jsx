@@ -7,9 +7,7 @@ import Link from "next/link";
 export default function Header10({ links }) {
   return (
     <div className="main-nav-sub full-wrapper">
-      {/* Logo  (* Add your text or image to the link tag. Use SVG or PNG image format. 
-              If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
-              image size for support of retina screens. See details in the template documentation. *) */}
+   
       <div className="nav-logo-wrap local-scroll">
         <a href="/" className="logo font-alt">
           <Image
@@ -36,8 +34,6 @@ export default function Header10({ links }) {
           <Nav links={links} />
         </ul>
         <ul className="items-end clearlist local-scroll">
-
-          {/* End Languages */}
           {links[0].href.includes("/") ? (
             <li>
               <Link

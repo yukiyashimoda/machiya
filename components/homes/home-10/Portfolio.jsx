@@ -8,7 +8,7 @@ export default function Portfolio() {
     <div className="container">
       
       {/* Portfolio Carousel */}
-      <div className="wow fadeInUp">
+      <div className="fadeInUp">
         <div className="relative">
           <Swiper
             spaceBetween={0}
