@@ -37,7 +37,7 @@ export const portfolioItems = [
     imgSrc: "/assets/images/demo-strong/portfolio/5.png",
     imgAlt: "Image Description",
     title: "駐車場完備",
-    descr: "店舗脇には駐車場を●台完備。また、第二駐車場も●台ご用意しております。",
+    descr: "店舗脇には駐車場を3台完備。また、ランチタイム限定で第二駐車場も2台ご用意しております。",
   },
   {
     id: 6,
