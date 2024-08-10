@@ -65,7 +65,7 @@ export default function ModernBlogSinglePage({ params }) {
     <>
       <div className="theme-modern">
         <div className="page" id="top">
-          <nav className="main-nav dark stick-fixed wow-menubar">
+          <nav className="main-nav dark stick-fixed ">
             <Header10 links={strongMultiPages} />
           </nav>
           <main id="main">
@@ -89,12 +89,12 @@ export default function ModernBlogSinglePage({ params }) {
                   </div>
                   <hr className="white mt-0 mb-0" />
                 </div>
-                <h1 className="section-title-large font-alt uppercase mb-0 wow fadeRotateIn">
+                <h1 className="section-title-large font-alt uppercase mb-0  fadeRotateIn">
                   {post.title}
                 </h1>
                 {/* Author, Categories, Comments */}
                 <div
-                  className="blog-item-data mt-30 mt-sm-10 mb-0 wow fadeInUp"
+                  className="blog-item-data mt-30 mt-sm-10 mb-0  fadeInUp"
                   data-wow-delay="0.2s"
                 >
                   <div className="d-inline-block me-3">
@@ -151,6 +151,7 @@ export default function ModernBlogSinglePage({ params }) {
                           className="font-alt"
                           dangerouslySetInnerHTML={{ __html: post.body }}
                         />
+                        
                       </div>
                     </div>
                     {/* End Post */}
