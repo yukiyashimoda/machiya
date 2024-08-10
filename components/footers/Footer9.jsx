@@ -6,7 +6,7 @@ export default function Footer9() {
     <div className="container">
       <div className="page-section">
         <div className="row">
-         
+          
           <div className="col-lg-6 footer-social-links text-center mb-md-40">
             {socialMediaLinks.map((elm, i) => (
               <a
@@ -39,11 +39,10 @@ export default function Footer9() {
 
         〒064-0919 北海道札幌市中央区南１９条西１５丁目２−７<br />
         AM11:00-14:00 / PM17:00-22:00
-
-      </div>
-      <div className="col-lg-3 text-center text-lg-start mb-md-50">
+        </div>
+        <div className="text-center mb-md-mt-50">
             © うなぎと酒 まちや {new Date().getFullYear()}.
-      </div>
+          </div>
       {/* End Footer Text */}
     </div>
   );

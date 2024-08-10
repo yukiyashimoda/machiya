@@ -32,7 +32,7 @@ export const socialLinks = [
 
 export const socialMediaLinks = [
   {
-    href: "https://www.instagram.com/unagi_sake_machiya",
+    href: "https://www.instagram.com/unagi__sake_machiya",
     title: "instagran",
     iconClass: "fa-instagram",
     name: "instagram",
