@@ -170,7 +170,7 @@ export default function ModernBlogSinglePage({ params }) {
                     <div className="clearfix mt-40">
                       {prevPost && (
                         <Link
-                          href={`/modern-blog-single/${prevPost.id}`}
+                          href={`/news/${prevPost.id}`}
                           className="blog-item-more circle left"
                         >
                           <i className="mi-chevron-left" />
@@ -179,7 +179,7 @@ export default function ModernBlogSinglePage({ params }) {
                       )}
                       {nextPost && (
                         <Link
-                          href={`/modern-blog-single/${nextPost.id}`}
+                          href={`/news/${nextPost.id}`}
                           className="blog-item-more circle right"
                         >
                           前の投稿&nbsp;

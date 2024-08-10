@@ -1,42 +1,42 @@
 export const strongMultiPages = [
   { href: "/", text: "Home" },
-  { href: "/strong-about", text: "当店について", className: "active" },
-  { href: "/strong-services", text: "お品書き" },
+  { href: "/about", text: "当店について", className: "active" },
+  { href: "/menu", text: "お品書き" },
   { href: "/archive", text: "お知らせ" },
 ];
 export const strongMultiPagesDark = [
   { href: "/strong-multi-page", text: "Home" },
-  { href: "/strong-about", text: "当店について", className: "active" },
-  { href: "/strong-services", text: "お品書き" },
+  { href: "/about", text: "当店について", className: "active" },
+  { href: "/menu", text: "お品書き" },
   { href: "/archive", text: "お知らせ" },
   { href: "/strong-contact", text: "アクセス" },
 ];
 export const strongSinglePages = [
   { href: "/strong-multi-page", text: "Home" },
-  { href: "/strong-about", text: "当店について", className: "active" },
-  { href: "/strong-services", text: "お品書き" },
+  { href: "/about", text: "当店について", className: "active" },
+  { href: "/menu", text: "お品書き" },
   { href: "/archive", text: "お知らせ" },
   { href: "/strong-contact", text: "アクセス" },
 ];
 
 export const slickMultipages = [
   { href: "/strong-multi-page", text: "Home" },
-  { href: "/strong-about", text: "当店について", className: "active" },
-  { href: "/strong-services", text: "お品書き" },
+  { href: "/about", text: "当店について", className: "active" },
+  { href: "/menu", text: "お品書き" },
   { href: "/archive", text: "お知らせ" },
   { href: "/strong-contact", text: "アクセス" },
 ];
 export const slickMultipagesDark = [
   { href: "/strong-multi-page", text: "Home" },
-  { href: "/strong-about", text: "当店について", className: "active" },
-  { href: "/strong-services", text: "お品書き" },
+  { href: "/about", text: "当店について", className: "active" },
+  { href: "/menu", text: "お品書き" },
   { href: "/archive", text: "お知らせ" },
   { href: "/strong-contact", text: "アクセス" },
 ];
 export const slickOnepage = [
   { href: "/strong-multi-page", text: "Home" },
-  { href: "/strong-about", text: "当店について", className: "active" },
-  { href: "/strong-services", text: "お品書き" },
+  { href: "/about", text: "当店について", className: "active" },
+  { href: "/menu", text: "お品書き" },
   { href: "/archive", text: "お知らせ" },
   { href: "/strong-contact", text: "アクセス" },
 ];

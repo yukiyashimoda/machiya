@@ -100,7 +100,7 @@ export default function StrongBlogPage() {
                         key={post.id}
                       >
                         <div className="post-prev-2-img">
-                          <Link href={`/modern-blog-single/${post.id}`}>
+                          <Link href={`/news/${post.id}`}>
                             <Image
                               src={post.photo?.url || "/assets/images/machiya_logo.png"}
                               width={700}
@@ -110,7 +110,7 @@ export default function StrongBlogPage() {
                           </Link>
                         </div>
                         <h3 className="post-prev-2-title">
-                          <Link href={`/modern-blog-single/${post.id}`}>
+                          <Link href={`/news/${post.id}`}>
                             {post.title}
                           </Link>
                         </h3>

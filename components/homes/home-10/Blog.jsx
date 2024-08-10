@@ -68,7 +68,7 @@ export default function Blog() {
             `}
             >
               <div className="post-prev-2-img">
-                <Link href={`/modern-blog-single/${post.id}`}>
+                <Link href={`/news/${post.id}`}>
                   <Image
                     width={700}
                     height={479}
@@ -78,7 +78,7 @@ export default function Blog() {
                 </Link>
               </div>
               <h3 className="post-prev-2-title">
-                <Link href={`/modern-blog-single/${post.id}`}>
+                <Link href={`/news/${post.id}`}>
                   {post.title}
                 </Link>
               </h3>

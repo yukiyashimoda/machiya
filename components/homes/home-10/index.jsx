@@ -113,7 +113,7 @@ export default function Home10({ onePage = false, dark = false }) {
                 ) : (
                   <>
                     <Link
-                      href={`/strong-about${dark ? "-dark" : ""}`}
+                      href={`/about${dark ? "-dark" : ""}`}
                       className="btn btn-mod btn-white btn-large btn-round btn-hover-anim"
                     >
                       <span className="font-alt">
