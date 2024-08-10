@@ -12817,7 +12817,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
 }
 
 @keyframes scaleImage {
-  0%, 60% {
+  0%, 50% {
     transform: scale(1); /* 開始時と半分の時間で元のサイズ */
   }
   100% {
