@@ -58,7 +58,7 @@ export default function Contact() {
         </ul>
 
         {/* ボタンの追加 */}
-        <div className="text-center mt-4">
+        <div className="text-center mt-4 mb-10">
           {/* 電話をかけるボタン */}
           <a href="tel:011-600-1747" className="btn btn-primary me-2 sub4">
             電話をかける

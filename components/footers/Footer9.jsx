@@ -33,7 +33,7 @@ export default function Footer9() {
         </div>
       </div>
       {/* Footer Text */}
-      <div className="footer-text text-center opacity-75 mt-n10 pb-50">
+      <div className="footer-text text-center opacity-75 mt-n10 pb-50 font-alt">
         市電「ロープウェイ入口駅」徒歩2分。
         <hr className={`mt-0 mb-0  `} />
 

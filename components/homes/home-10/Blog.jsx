@@ -43,7 +43,7 @@ export default function Blog() {
           <div className="local-scroll">
             <Link
               href={`/archive`}
-              className="btn btn-mod btn-white btn-large btn-round btn-hover-anim"
+              className="font-alt btn btn-mod btn-white btn-large btn-round btn-hover-anim"
             >
               <span>もっと見る</span>
             </Link>
@@ -51,7 +51,7 @@ export default function Blog() {
         </div>
       </div>
       {/* Blog Grid */}
-      <div className="row gy-4">
+      <div className="row gy-4 font-alt">
         {/* Post Item */}
         {posts.map((post, index) => (
           <div

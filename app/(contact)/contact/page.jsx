@@ -44,7 +44,7 @@ export default function StrongContactPage() {
                 {/* Home Section Content */}
                 <div className="home-content text-center">
                   <h1 className="hs-title-7 mb-0">
-                    <span className="wow charsAnimIn-2 text-alt" data-splitting="chars">
+                    <span className=" charsAnimIn-2 font-alt" data-splitting="chars">
                       求人について
                     </span>
                   </h1>
