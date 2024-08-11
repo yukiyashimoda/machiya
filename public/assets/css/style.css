@@ -12838,7 +12838,6 @@ html:not(.mobile) .owl-animate-fadeInDown {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
-  overflow-x: auto; /* 必要に応じて横スクロールを追加 */
   white-space: nowrap;
 }
 

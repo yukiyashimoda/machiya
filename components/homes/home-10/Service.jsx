@@ -12,7 +12,7 @@ export default function Service() {
         <li className="nav-item" role="presentation">
           <a
             href="#service-branding"
-            className="nav-link active sub3"
+            className="nav-link active "
             data-bs-toggle="tab"
             role="tab"
             aria-selected="true"
@@ -26,7 +26,7 @@ export default function Service() {
         <li className="nav-item" role="presentation">
           <a
             href="#service-ui-ux-design"
-            className="nav-link sub3"
+            className="nav-link "
             data-bs-toggle="tab"
             role="tab"
             aria-selected="false"
@@ -40,7 +40,7 @@ export default function Service() {
         <li className="nav-item" role="presentation">
           <a
             href="#service-animation"
-            className="nav-link sub3"
+            className="nav-link"
             data-bs-toggle="tab"
             role="tab"
             aria-selected="false"
