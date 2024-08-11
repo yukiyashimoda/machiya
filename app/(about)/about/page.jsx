@@ -91,22 +91,22 @@ export default function StrongAboutPage() {
           <hr />
           <li className="item">
             <span className="sub3">住所</span>
-            <span className="sub5">札幌市中央区南19条西15丁目2-7</span>
+            <span className="sub4">札幌市中央区南19条西15丁目2-7</span>
           </li>
           <hr />
           <li className="item">
             <span className="sub3">営業時間</span>
-            <span className="sub5">AM11:00-14:00/PM17:00-22:00</span>
+            <span className="sub4">AM11:00-14:00/PM17:00-22:00</span>
           </li>
           <hr />
           <li className="item">
             <span className="sub3">定休日</span>
-            <span className="sub5">毎週火曜日</span>
+            <span className="sub4">毎週火曜日</span>
           </li>
           <hr />
           <li className="item">
             <span className="sub3">駐車場</span>
-            <span className="sub5">3台
+            <span className="sub4">3台
             </span>
           </li>
           
