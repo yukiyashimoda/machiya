@@ -159,7 +159,7 @@ export default function ModernBlogSinglePage({ params }) {
                           </span>
                         </div>
                         <p
-                          className="font-alt"
+                          className="font-alt sub4"
                           dangerouslySetInnerHTML={{ __html: post.body }}
                         />
                       </div>
