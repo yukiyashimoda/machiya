@@ -12833,3 +12833,23 @@ html:not(.mobile) .owl-animate-fadeInDown {
     background: rgba(0, 0, 0, 1); /* 最後に黒色に変化 */
   }
 }
+
+.nav-tabs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* 必要に応じて横スクロールを追加 */
+  white-space: nowrap;
+}
+
+.nav-item {
+  flex: 1; /* 各タブを均等に広げる */
+  min-width: 120px; /* タブの最小幅を設定 */
+  text-align: center; /* タブ内のテキストを中央に配置 */
+}
+
+.nav-link {
+  padding: 10px 15px; /* パディングを調整 */
+  font-size: 14px; /* フォントサイズを調整 */
+}
+
