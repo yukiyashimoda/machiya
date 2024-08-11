@@ -106,23 +106,24 @@ export default function StrongAboutPage() {
           <hr />
           <li className="item">
             <span className="sub3">駐車場</span>
-            <span className="sub5">3台(ランチタイムは近隣に第二駐車場あり)
+            <span className="sub5">3台
             </span>
           </li>
+          
           <hr />
         </ul>
         
         {/* ボタンの追加 */}
         <div className="text-center mt-4">
           {/* 電話をかけるボタン */}
-          <a href="tel:011-600-1747" className="btn btn-secondary me-2">
+          <a href="tel:011-600-1747" className="btn btn-secondary me-2 sub4">
             電話をかける
           </a>
           {/* メールを送るボタン */}
-          <a href="mailto:info@unagi-machiya.com" className="btn btn-secondary me-2">
+          <a href="mailto:info@unagi-machiya.com" className="btn btn-secondary me-2 sub4">
             メールを送る
           </a>
-          <a href="/menu" className="btn btn-secondary">
+          <a href="/menu" className="btn btn-secondary sub4">
             お品書きを見る
           </a>
         </div>
@@ -135,6 +136,7 @@ export default function StrongAboutPage() {
                           className="wow scaleOutIn"
                           data-wow-duration="1.2s"
                         />
+                        <p className="sub4 text-center mr-0">(ランチタイムは近隣に第二駐車場あり)</p>
                       </div>
       </div>
 
