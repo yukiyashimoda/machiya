@@ -117,11 +117,11 @@ export default function StrongAboutPage() {
         <div className="text-center mt-4">
           {/* 電話をかけるボタン */}
           <a href="tel:011-600-1747" className="btn btn-secondary me-2 sub4">
-            電話をかける
+            TEL
           </a>
           {/* メールを送るボタン */}
           <a href="mailto:info@unagi-machiya.com" className="btn btn-secondary me-2 sub4">
-            メールを送る
+            MAIL
           </a>
           <a href="/menu" className="btn btn-secondary sub4">
             お品書きを見る
