@@ -9,7 +9,7 @@ export default function Contact() {
       <div className="row mb-90 mb-sm-50">
         <div className="col-lg-5 col-xl-4 mb-md-90 mb-sm-50 wow fadeInUp">
           <h2 className="section-title-strong mb-40">
-            Let’s work <span className="font-alt">together</span>
+            <span className="font-alt">アルバイト募集について</span>
           </h2>
           <p className="mb-0">
             Integer non efficitur ex lorem ipsum. Praesent mauris, dignissim
