@@ -1,13 +1,9 @@
+import Map from "@/components/common/Map";
 import Footer9 from "@/components/footers/Footer9";
 import Header10 from "@/components/headers/Header10";
-import Team from "@/components/homes/home-10/Team";
-import Testimonials from "@/components/homes/home-10/Testimonials";
-import { featuresListData } from "@/data/features";
-
 import { strongMultiPages } from "@/data/menu";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import Link from "next/link";
 const ParallaxContainer = dynamic(
   () => import("@/components/common/ParallaxContainer"),
   {
@@ -88,200 +84,68 @@ export default function StrongAboutPage() {
                     </div>
                   </div>
 
-                  <div className="col-sm-8 col-lg-6 col-xl-4 offset-xl-1 mt-n10">
-                    <div className="wow linesAnimIn" data-splitting="lines">
-                    <p className="mb-40">
-                    昼はふっくら香ばしい鰻重を、夜はこだわりの鰻串と選りすぐりの銘酒を楽しめる当店。<br />夜は居酒屋として、鰻の身・エリ・肝焼きなどを味わえる串焼き盛り合わせや冷菜などの一品料理もご提供しております。<br />ワインや日本酒など、種類豊富なお酒と合わせてご堪能ください。<br />和風情緒あふれる落ち着いた雰囲気の店内には、カウンター席とテーブル席を完備。卓を繋げて10名様前後で座れるので、ご家族3世代でのご利用もおすすめです◎
-                      </p>
-                      <p className="lead mt-0 mb-40">
-                        札幌市電『ロープウェイ前』駅から徒歩一分。藻岩山ロープウェイ行きバス乗り場から道を挟んで向かいに位置する当店。
-                        店舗脇には駐車場を三台完備しており、ランチの時間帯には二台駐車いただける第二駐車場もご用意しております。
-                      </p>
-                      
-                    </div>
-
-                    <div
-                      className="local-scroll wow fadeInUp"
-                      data-wow-offset="0"
-                    >
-                      <Link
-                        href={`/menu${dark ? "-dark" : ""}`}
-                        className="btn btn-mod btn-white btn-large btn-round btn-hover-anim"
-                      >
-                        <span>
-                          お品書きを見る
-                          <span className="visually-hidden">About Us</span>
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-2 offset-xl-1 d-none d-lg-block">
-                    <div className="round overflow-hidden">
-                      <Image
-                        width={330}
-                        height={894}
-                        src="/assets/images/demo-strong/section-image-3.jpg"
-                        alt="Image description"
-                        className="wow scaleOutIn"
-                        data-wow-duration="1.2s"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
-            {/* End About Section */}
-            {/* Divider */}
-            <section
-              className={`page-section  scrollSpysection  ${
-                dark ? "bg-dark-1 light-content" : ""
-              }`}
-              id="team"
-            >
-              <div className="container">
-                <div className="row">
-                  {/* Left Column */}
-                  <div className="col-xl-5 d-flex align-items-center team-1-column-sticky mb-lg-90 mb-sm-50">
-                    <div>
-                      <h2 className="section-caption-border">Our Team</h2>
-                      <h3 className="section-title-strong mb-40">
-                        Meet the<span className="font-alt">team of</span>{" "}
-                        experts
-                      </h3>
-                      <p className="mb-40">
-                        Aliquam erat volutpat. Proin luctus interdum orci,
-                        euismod ultrices placerat ultricies pretium sem euismod
-                        et. Nam consequat lectus nec nunc faucibus.
-                      </p>
-                      <div className="local-scroll">
-                        <Link
-                          href={`/strong-contact${dark ? "-dark" : ""}`}
-                          className="btn btn-mod btn-white btn-large btn-round btn-hover-anim"
-                        >
-                          <span>Join our Team</span>
-                        </Link>
+                  <div className="col-sm-8 col-lg-6 col-xl-4 offset-xl-1 ">
+                  <div className="row fadeInUp" data-wow-delay="0.27s">
+        
+        <ul className="food-menu">
+          <hr />
+          <li className="item">
+            <span className="sub3">住所</span>
+            <span className="sub5">札幌市中央区南19条西15丁目2-7</span>
+          </li>
+          <hr />
+          <li className="item">
+            <span className="sub3">営業時間</span>
+            <span className="sub5">AM11:00-14:00/PM17:00-22:00</span>
+          </li>
+          <hr />
+          <li className="item">
+            <span className="sub3">定休日</span>
+            <span className="sub5">毎週火曜日</span>
+          </li>
+          <hr />
+          <li className="item">
+            <span className="sub3">駐車場</span>
+            <span className="sub5">3台(ランチタイムは近隣に第二駐車場あり)
+            </span>
+          </li>
+          <hr />
+        </ul>
+        
+        {/* ボタンの追加 */}
+        <div className="text-center mt-4">
+          {/* 電話をかけるボタン */}
+          <a href="tel:011-600-1747" className="btn btn-secondary me-2">
+            電話をかける
+          </a>
+          {/* メールを送るボタン */}
+          <a href="mailto:info@unagi-machiya.com" className="btn btn-secondary me-2">
+            メールを送る
+          </a>
+          <a href="/menu" className="btn btn-secondary">
+            お品書きを見る
+          </a>
+        </div>
+        <div className="mt-30">
+                        <Image
+                          width={1500}
+                          height={1000}
+                          src="/assets/images/machiya_parking.png"
+                          alt="Image description"
+                          className="wow scaleOutIn"
+                          data-wow-duration="1.2s"
+                        />
                       </div>
-                    </div>
-                  </div>
-                  {/* End Left Column */}
-                  {/* Right Column */}
-                  <div className="col-xl-6 offset-xl-1">
-                    <Team />
-                  </div>
-                  {/* End Right Column */}
-                </div>
-              </div>
-            </section>
-            {/* <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} /> */}
-            {/* End Team Section */}
-            {/* Split Section */}
-            <section className="pt-30">
-              <div id="paddingRightContainer" className="container" />
-              <div className="row g-0">
-                <div className="col-lg-6 mt-n30 mt-md-0 mb-30 mb-md-0">
-                  <div
-                    id="paddingRight"
-                    className={`split-column-right ${
-                      dark ? "bg-dark-2" : "bg-dark-1"
-                    } light-content position-relative d-flex align-items-center`}
-                    data-rellax-y=""
-                    data-rellax-speed="0.5"
-                    data-rellax-percentage="0.5"
-                  >
-                    {/* Decorative Dots */}
-                    <div className="position-absolute top-0 start-0 pt-2 ps-2 opacity-02">
-                      <Image
-                        width={192}
-                        height={222}
-                        src="/assets/images/demo-strong/decoration.svg"
-                        alt=""
-                      />
-                    </div>
-                    {/* End Decorative Dots */}
-                    <div>
-                      <h2 className="section-title mb-30">
-                        Responsive, <span className="font-alt">flexible</span>{" "}
-                        and customizable.
-                      </h2>
-                      <p className="mb-50">
-                        Phasellus nisl lectus, tincidunt eget fermentum quis,
-                        accumsan a sem efficitur augue ac ex maximus, eget
-                        viverra sem aliquam. Donec blandit ante nunc, nec
-                        pellentesque arcu egestas a lorem.
-                      </p>
-                      {/* Features List */}
-                      <div className="row mt-n20">
-                        {/* Features List Item */}
-                        {featuresListData.map((item, index) => (
-                          <div
-                            key={index}
-                            className="col-sm-6 col-lg-12 col-xl-6 d-flex mt-20"
-                          >
-                            <div className="features-list-icon">
-                              <i className="mi-check" />
-                            </div>
-                            <div className="features-list-text">
-                              {item.text}
-                            </div>
-                          </div>
-                        ))}
-                        {/* End Features List Item */}
-                      </div>
-                      {/* End Features List */}
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6 d-flex align-items-stretch order-lg-first">
-                  <div className="split-image-left">
-                    <Image
-                      width={1100}
-                      height={930}
-                      src="/assets/images/demo-strong/split-image-2.jpg"
-                      alt="Image Description"
-                    />
-                    {/* Circle Text */}
-                    <div className="position-absolute bottom-0 start-0 ps-4 pb-4 d-none d-sm-block">
-                      <Image
-                        src="/assets/images/demo-strong/circle-text.svg"
-                        width={138}
-                        height={138}
-                        alt="Image Description"
-                      />
-                    </div>
-                    {/* End Circle Text */}
+      </div>
+
+                    
                   </div>
                 </div>
               </div>
             </section>
-            {/* End Split Section */}
-            {/* Testimonials Section */}
-            <section
-              className={`page-section overflow-hidden  ${
-                dark ? "bg-dark-1 light-content" : ""
-              }`}
-            >
-              <div className="container">
-                <div class="row mb-90 mb-sm-50">
-                  <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
-                    <h2 class="section-title-strong mb-40">
-                      Clients <span class="font-alt">Stories</span>
-                    </h2>
-                    <p class="mb-0">
-                      Etiam et arcu nec quam laoreet hendrerit eget sed velit.
-                      Fusce convallis elit at ex sodales, quis maximus augue
-                      hendrerit. Phasellus eget turpis vel nibh convallis
-                      vulputate. Pellentesque efficitur augue ac ex maximus,
-                      eget viverra sem aliquam. Mauris egestas, lectus sed
-                      accumsan varius.
-                    </p>
-                  </div>
-                </div>
-                <Testimonials />
+            <div className="google-map">
+                <Map />
               </div>
-            </section>
-            {/* End Testimonials Section */}
           </main>
 
           <footer className="footer-1 bg-dark-1 light-content">
