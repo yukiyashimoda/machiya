@@ -60,9 +60,6 @@ export default function StrongContactPage() {
             >
               <Contact />
             </section>
-            <div className="google-map">
-              <Map />
-            </div>
           </main>
 
           <footer className="footer-1 bg-dark-1 light-content">
