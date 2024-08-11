@@ -18,9 +18,9 @@ const dark = false;
 const onePage = false;
 export const metadata = {
   title:
-    "Home 10 About || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "うなぎと酒 まちや",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "当店について",
 };
 export default function StrongAboutPage() {
   return (
@@ -44,8 +44,8 @@ export default function StrongAboutPage() {
                 {/* Home Section Content */}
                 <div className="home-content text-center">
                   <h1 className="hs-title-7 mb-0">
-                    <span className="wow charsAnimIn-2" data-splitting="chars">
-                      About <span className="font-alt">Studio</span>
+                    <span className="wow charsAnimIn-2 font-alt" data-splitting="chars">
+                      当店について
                     </span>
                   </h1>
                 </div>
@@ -90,19 +90,14 @@ export default function StrongAboutPage() {
 
                   <div className="col-sm-8 col-lg-6 col-xl-4 offset-xl-1 mt-n10">
                     <div className="wow linesAnimIn" data-splitting="lines">
+                    <p className="mb-40">
+                    昼はふっくら香ばしい鰻重を、夜はこだわりの鰻串と選りすぐりの銘酒を楽しめる当店。<br />夜は居酒屋として、鰻の身・エリ・肝焼きなどを味わえる串焼き盛り合わせや冷菜などの一品料理もご提供しております。<br />ワインや日本酒など、種類豊富なお酒と合わせてご堪能ください。<br />和風情緒あふれる落ち着いた雰囲気の店内には、カウンター席とテーブル席を完備。卓を繋げて10名様前後で座れるので、ご家族3世代でのご利用もおすすめです◎
+                      </p>
                       <p className="lead mt-0 mb-40">
-                        Resonance is a full-service creative studio creating
-                        beautiful digital experiences and products. We are a
-                        company specializing in design and engineering.
+                        札幌市電『ロープウェイ前』駅から徒歩一分。藻岩山ロープウェイ行きバス乗り場から道を挟んで向かいに位置する当店。
+                        店舗脇には駐車場を三台完備しており、ランチの時間帯には二台駐車いただける第二駐車場もご用意しております。
                       </p>
-                      <p className="mb-40">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vestibulum euismod augue ac faucibus aliquet. Fusce eu
-                        nibh enim. Etiam sit amet felis molestie tellus
-                        condimentum feugiat. Sed scelerisque dui id maximus
-                        imperdiet euismod ultrices placerat euismod ultrices
-                        placerat.
-                      </p>
+                      
                     </div>
 
                     <div
@@ -110,11 +105,11 @@ export default function StrongAboutPage() {
                       data-wow-offset="0"
                     >
                       <Link
-                        href={`/strong-services${dark ? "-dark" : ""}`}
+                        href={`/menu${dark ? "-dark" : ""}`}
                         className="btn btn-mod btn-white btn-large btn-round btn-hover-anim"
                       >
                         <span>
-                          View Services
+                          お品書きを見る
                           <span className="visually-hidden">About Us</span>
                         </span>
                       </Link>
