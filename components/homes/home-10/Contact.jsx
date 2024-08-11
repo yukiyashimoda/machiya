@@ -5,14 +5,8 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="container font-alt">
-      <div className="row mb-90 mb-sm-50">
-        <div className="col-lg-5 col-xl-4 mb-md-90 mb-sm-50 wow fadeInUp">
-          <p className="mb-0 sub4">
-            うなぎと酒 まちやでは現在、アルバイトスタッフを募集しています。<br />ご興味のある方は下記の要項をご確認の上、電話もしくはメールにてご連絡ください。
-          </p>
-        </div>
-        <div className="col-lg-7 offset-xl-1">
+    <div className="container font-alt box">
+      <div className="col-lg-7 offset-xl-1">
           <div className="round overflow-hidden">
             <Image
               width={1080}
@@ -23,6 +17,12 @@ export default function Contact() {
               data-wow-offset={110}
             />
           </div>
+        </div>
+      <div className="row mb-90 mb-sm-50">
+        <div className="col-lg-5 col-xl-4 mb-md-90 mb-sm-50 wow fadeInUp">
+          <p className="mb-0 sub4">
+            うなぎと酒 まちやでは現在、アルバイトスタッフを募集しています。<br />ご興味のある方は下記の要項をご確認の上、電話もしくはメールにてご連絡ください。
+          </p>
         </div>
       </div>
       <div className="row wow fadeInUp" data-wow-delay="0.27s">
