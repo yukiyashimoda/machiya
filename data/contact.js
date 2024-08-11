@@ -2,10 +2,10 @@ export const contactItems = [
   {
     iconClass: "mi-location",
     title: "Address",
-    text: "Envato Pty Ltd, PO Box 16122 Collins Street, West Victoria.",
+    text: "札幌市中央区南19条西15丁目2-7",
     link: {
-      url: "https://goo.gl/maps/7Vw1PBhxx5BaXStr8",
-      text: "See Map",
+      url: "https://maps.app.goo.gl/yH4p4oj63BXamJEx8",
+      text: "アクセス",
       rel: "nofollow noopener",
       target: "_blank",
     },
@@ -13,19 +13,19 @@ export const contactItems = [
   {
     iconClass: "mi-email",
     title: "Email",
-    text: "ibthemes21@gmail.com",
+    text: "info@unagi-machiya.com",
     link: {
-      url: "mailto:ibthemes21@gmail.com",
-      text: "Say Hello",
+      url: "mailto:info@unagi-machiya.com",
+      text: "メール",
     },
   },
   {
     iconClass: "mi-mobile",
     title: "Phone",
-    text: "+1 837 652 8800",
+    text: "+81 011-600-1747",
     link: {
-      url: "tel:+61383767284",
-      text: "Call now",
+      url: "tel:+81116001747",
+      text: "電話",
     },
   },
 ];

@@ -38,7 +38,8 @@ export default function Footer9() {
         <hr className={`mt-0 mb-0  `} />
 
         〒064-0919 北海道札幌市中央区南１９条西１５丁目２−７<br />
-        AM11:00-14:00 / PM17:00-22:00
+        AM11:00-14:00 / PM17:00-22:00<br />
+        定休日：火曜日
         </div>
         <div className="text-center mb-md-mt-50">
             © うなぎと酒 まちや {new Date().getFullYear()}.

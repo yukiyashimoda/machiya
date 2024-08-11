@@ -1,5 +1,6 @@
 'use client'
 
+import Map from "@/components/common/Map";
 import { useEffect, useState } from "react";
 import Footer9 from "@/components/footers/Footer9";
 import Header10 from "@/components/headers/Header10";
@@ -69,6 +70,9 @@ export default function Home10MainDemoMultiPage() {
               </div>
 
               <Home10 />
+              <div className="google-map">
+                <Map />
+              </div>
             </main>
             <footer className="footer-1 bg-dark-1 light-content">
               <Footer9 />

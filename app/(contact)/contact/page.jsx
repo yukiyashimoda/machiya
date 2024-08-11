@@ -19,9 +19,9 @@ const dark = false;
 const onePage = false;
 export const metadata = {
   title:
-    "Strong Contact || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "うなぎと酒 まちや",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "求人情報",
 };
 export default function StrongContactPage() {
   return (
@@ -44,8 +44,8 @@ export default function StrongContactPage() {
                 {/* Home Section Content */}
                 <div className="home-content text-center">
                   <h1 className="hs-title-7 mb-0">
-                    <span className="wow charsAnimIn-2" data-splitting="chars">
-                      Contact <span className="font-alt">Us</span>
+                    <span className="wow charsAnimIn-2 text-alt" data-splitting="chars">
+                      求人について
                     </span>
                   </h1>
                 </div>
