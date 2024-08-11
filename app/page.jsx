@@ -21,18 +21,27 @@ export default function Home10MainDemoMultiPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading for 3 seconds
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 4000);
+    const isFirstVisit = localStorage.getItem("isFirstVisit");
 
-    return () => clearTimeout(timer); // Cleanup timer on unmount
+    if (isFirstVisit === null) {
+      // 初めての訪問
+      localStorage.setItem("isFirstVisit", "false");
+      setLoading(true);
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 4000); // 4秒間のローディングアニメーション
+
+      return () => clearTimeout(timer); // コンポーネントがアンマウントされた時にタイマーをクリア
+    } else {
+      // 2回目以降の訪問
+      setLoading(false);
+    }
   }, []);
 
   return (
     <>
       {loading ? (
-        <LoadingAnimation /> // Show loading animation while loading
+        <LoadingAnimation /> // 最初の訪問時のみローディングアニメーションを表示
       ) : (
         <div className="theme-strong">
           <div className="page" id="top">
