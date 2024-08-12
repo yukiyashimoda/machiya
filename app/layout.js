@@ -35,16 +35,79 @@ export default function RootLayout({ children }) {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      // Import the script only on the client side
       import("bootstrap/dist/js/bootstrap.esm").then(() => {
         // Module is imported, you can access any exported functionality if needed
       });
     }
   }, []);
 
+  // SEOメタ情報
+  const pageTitle = "うなぎと酒 まちや | 国産鰻の逸品と銘酒を堪能";
+  const pageDescription =
+    "市電「ロープウェイ入口駅」徒歩2分。うなぎと酒 まちやでは、国産鰻を使用した逸品と厳選された銘酒をご提供します。";
+  const pageUrl = `https://unagi-machiya.com${path}`;
+  const pageImage = "/assets/images/machiya_view.jpg";
+
   return (
     <html lang="ja" className="no-mobile no-touch">
       <head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href={pageUrl} />
+        <meta name="robots" content="index, follow" />
+        
+        {/* Open Graph (OG) タグ */}
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={pageImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="うなぎと酒 まちや" />
+        
+        {/* xカード */}
+        <meta name="x:card" content="summary_large_image" />
+        <meta name="x:title" content={pageTitle} />
+        <meta name="x:description" content={pageDescription} />
+        <meta name="x:image" content={pageImage} />
+        
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        {/* 構造化データ（JSON-LD） */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "name": "うなぎと酒 まちや",
+            "description": pageDescription,
+            "image": pageImage,
+            "url": "https://unagi-machiya.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "北海道札幌市中央区",
+              "addressLocality": "札幌市",
+              "postalCode": "064-0916",
+              "addressCountry": "JP"
+            },
+            "telephone": "+81-11-600-1747",
+            "priceRange": "¥4000-¥5000",
+            "servesCuisine": "Japanese",
+            "menu": "/menu",
+            "sameAs": [
+              "https://www.instagram.com/unagi__sake_machiya"
+            ]
+          })}
+        </script>
+
+        {/* フォントのリンク */}
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"
@@ -62,21 +125,9 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
-          rel="stylesheet"
-        />
-        <link
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
           rel="stylesheet"
         />
-        <meta property="og:title" content="うなぎと酒 まちや" />
-        <meta property="og:description" content="市電「ロープウェイ入口駅」徒歩2分。国産鰻の逸品と銘酒を堪能。" />
-        <meta property="og:url" content="https://unagi-machiya.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/assets/images/machiya_view.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="うなぎと酒 まちや" />
       </head>
       <body className="appear-animate body">{children}</body>
     </html>

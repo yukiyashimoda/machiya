@@ -1,13 +1,9 @@
 import Footer9 from "@/components/footers/Footer9";
 import Header10 from "@/components/headers/Header10";
-import Features from "@/components/homes/home-10/Features";
 import Service from "@/components/homes/home-10/Service";
-import { featuresListData } from "@/data/features";
 
 import { strongMultiPages } from "@/data/menu";
 import dynamic from "next/dynamic";
-import Image from "next/image";
-import Link from "next/link";
 import Gallery1 from "../../../components/gallery/Gallery1";
 const ParallaxContainer = dynamic(
   () => import("@/components/common/ParallaxContainer"),
