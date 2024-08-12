@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       import("bootstrap/dist/js/bootstrap.esm").then(() => {
-        // Module is imported, you can access any exported functionality if needed
+        // Bootstrapがクライアント側で正しく読み込まれるように
       });
     }
   }, []);
@@ -48,6 +48,27 @@ export default function RootLayout({ children }) {
   const pageUrl = `https://unagi-machiya.com${path}`;
   const pageImage = "/assets/images/machiya_view.jpg";
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "うなぎと酒 まちや",
+    "description": pageDescription,
+    "image": pageImage,
+    "url": "https://unagi-machiya.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "北海道札幌市中央区",
+      "addressLocality": "札幌市",
+      "postalCode": "064-0916",
+      "addressCountry": "JP",
+    },
+    "telephone": "+81-11-600-1747",
+    "priceRange": "¥4000-¥5000",
+    "servesCuisine": "Japanese",
+    "menu": "/menu",
+    "sameAs": ["https://www.instagram.com/unagi__sake_machiya"],
+  };
+
   return (
     <html lang="ja" className="no-mobile no-touch">
       <head>
@@ -56,7 +77,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={pageUrl} />
         <meta name="robots" content="index, follow" />
-        
+
         {/* Open Graph (OG) タグ */}
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
@@ -66,46 +87,32 @@ export default function RootLayout({ children }) {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="うなぎと酒 まちや" />
-        
-        {/* xカード */}
-        <meta name="x:card" content="summary_large_image" />
-        <meta name="x:title" content={pageTitle} />
-        <meta name="x:description" content={pageDescription} />
-        <meta name="x:image" content={pageImage} />
-        
+
+        {/* Twitterカード */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={pageImage} />
+
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
         {/* 構造化データ（JSON-LD） */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Restaurant",
-            "name": "うなぎと酒 まちや",
-            "description": pageDescription,
-            "image": pageImage,
-            "url": "https://unagi-machiya.com",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "北海道札幌市中央区",
-              "addressLocality": "札幌市",
-              "postalCode": "064-0916",
-              "addressCountry": "JP"
-            },
-            "telephone": "+81-11-600-1747",
-            "priceRange": "¥4000-¥5000",
-            "servesCuisine": "Japanese",
-            "menu": "/menu",
-            "sameAs": [
-              "https://www.instagram.com/unagi__sake_machiya"
-            ]
-          })}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+          }}
+        />
 
         {/* フォントのリンク */}
         <link

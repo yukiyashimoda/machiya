@@ -35,7 +35,7 @@ export const blogs2 = [
   {
     id: 4,
     imgSrc: "/assets/images/demo-modern/blog/1.jpg",
-    title: "これはテストです",
+    title: "Natura Insects Series: Crafting Insects Made by Flowers",
     date: "December 3, 2023",
     rellaxSpeed: -1,
     rellaxPercentage: 0.37,
@@ -63,7 +63,7 @@ export const blogs3 = [
     alt: "Image Description",
     author: "John Doe",
     date: "6 June",
-    title: "これはテストです",
+    title: "Natura Insects Series: Crafting Insects Made by Flowers",
     delay: "",
   },
   {

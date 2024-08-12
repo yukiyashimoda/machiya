@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://unagi-machiya.com
+
+# Sitemaps
+Sitemap: https://unagi-machiya.com/sitemap.xml
+Sitemap: https://unagi-machiya.com/my-custom-sitemap-1.xml
+Sitemap: https://unagi-machiya.com/my-custom-sitemap-2.xml
