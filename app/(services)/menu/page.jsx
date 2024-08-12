@@ -72,7 +72,6 @@ export default function StrongServicesPage() {
               </div>
             </section>
           </main>
-
           <footer className="footer-1 bg-dark-1 light-content">
             <Footer9 />
           </footer>

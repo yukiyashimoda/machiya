@@ -3,7 +3,7 @@ import { client } from "@/libs/client"; // MicroCMSのクライアントをイ�
 import Image from "next/image";
 import Link from "next/link";
 import dayjs from "dayjs"; // 日時フォーマット用のライブラリをインポート
-import { FaPen } from "react-icons/fa"; // ペンのアイコンをインポート
+import { CiClock1 } from "react-icons/ci";
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
@@ -77,13 +77,13 @@ export default function Blog() {
                   />
                 </Link>
               </div>
-              <h3 className="post-prev-2-title">
+              <h3 className="post-prev-2-title sub4">
                 <Link href={`/news/${post.id}`}>
                   {post.title}
                 </Link>
               </h3>
               <div className="post-prev-2-info">
-                <FaPen style={{ marginRight: "8px" }} />
+                <CiClock1 style={{ marginRight: "8px" }}/>
                 {dayjs(post.publishedAt).format("YYYY年MM月DD日")}
               </div>
             </div>

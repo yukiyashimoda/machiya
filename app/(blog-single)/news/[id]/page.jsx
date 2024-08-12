@@ -136,16 +136,16 @@ export default function ModernBlogSinglePage({ params }) {
               {/* End Scroll Down */}
             </ParallaxContainer>
             {/* Blog Content */}
-            <section className="page-section">
+            <section className="page-section font-alt sub4">
               <div className="container relative">
                 <div className="row">
                   {/* Content */}
                   <div className="col-lg-8 mb-md-80">
                     {/* Post */}
-                    <div className="blog-item mb-80 mb-xs-40">
-                      <div className="blog-item-body">
+                    <div className="blog-item mb-80 mb-xs-40 font-alt sub4">
+                      <div className="blog-item-body font-alt sub4">
                         {/* Media Gallery */}
-                        <div className="blog-media mb-40 mb-xs-30">
+                        <div className="blog-media mb-40 mb-xs-30 font-alt sub4">
                           <span className="">
                             <Image
                               src={
@@ -160,6 +160,7 @@ export default function ModernBlogSinglePage({ params }) {
                         </div>
                         <p
                           className="font-alt sub4"
+                          style={{ fontSize: "14px" }} // フォントサイズを小さく指定
                           dangerouslySetInnerHTML={{ __html: post.body }}
                         />
                       </div>
