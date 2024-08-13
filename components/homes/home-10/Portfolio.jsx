@@ -43,15 +43,15 @@ export default function Portfolio() {
                 className="owl-item"
                 style={{
                   width: "100%",
-                  maxWidth: "50%", // デスクトップ表示のときに50%に制限
+                  maxWidth: "70%", // デスクトップ表示のときに50%に制限
                 }}
               >
                 <div className="portfolio-4-item">
                   <a href={item.href}>
                     <div className="portfolio-4-image">
                       <Image
-                        width={902}
-                        height={564}
+                        width={702}
+                        height={364}
                         src={item.imgSrc}
                         alt={item.imgAlt}
                       />
