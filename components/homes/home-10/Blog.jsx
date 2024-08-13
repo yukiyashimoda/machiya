@@ -32,24 +32,13 @@ export default function Blog() {
   }
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-5 mb-md-90 mb-sm-50">
-          <h2 className="section-caption-border">Our Blog</h2>
-          <h3 className="section-title-strong mb-40">
-            <span className="font-alt">お知らせ</span>
-          </h3>
-          
-          <div className="local-scroll">
-            <Link
-              href={`/archive`}
-              className="font-alt btn btn-mod btn-white btn-large btn-round btn-hover-anim"
-            >
-              <span>もっと見る</span>
-            </Link>
-          </div>
-        </div>
-      </div>
+    <div className="container ">
+     <div className="row" >
+  <div className="col-lg-5 mb-md-50 mb-sm-30 mt-0" style={{ display: 'flex', ustifyContent: 'space-between', alignItems: 'center'  }}>
+    <h2 className="section-caption-border font-alt">お知らせ</h2>
+  </div>
+</div>
+
       {/* Blog Grid */}
       <div className="row gy-4 font-alt">
         {/* Post Item */}
@@ -91,6 +80,14 @@ export default function Blog() {
         ))}
         {/* End Post Item */}
       </div>
+      <div className="local-scroll flex-row-reverse text-right" >
+    <Link
+      href={`/archive`}
+      className="font-alt btn btn-mod btn-white btn-large btn-round btn-hover-anim"
+    >
+      <span>一覧を見る</span>
+    </Link>
+  </div>
       {/* End Blog Grid */}
     </div>
   );
