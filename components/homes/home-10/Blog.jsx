@@ -33,11 +33,11 @@ export default function Blog() {
 
   return (
     <div className="container ">
-     <div className="row" >
-  <div className="col-lg-5 mb-md-50 mb-sm-30 mt-0" style={{ display: 'flex', ustifyContent: 'space-between', alignItems: 'center'  }}>
-    <h2 className="section-caption-border font-alt">お知らせ</h2>
-  </div>
-</div>
+     <div className="row">
+            <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center mb-50">
+              <h2 className="font-alt section-caption-border">お知らせ</h2>
+            </div>
+          </div>
 
       {/* Blog Grid */}
       <div className="row gy-4 font-alt">
