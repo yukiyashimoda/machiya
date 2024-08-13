@@ -72,6 +72,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ja" className="no-mobile no-touch">
       <head>
+        
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -135,7 +136,9 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
           rel="stylesheet"
         />
+
       </head>
+      
       <body className="appear-animate body">{children}</body>
     </html>
   );
