@@ -43,7 +43,7 @@ export default function Portfolio() {
                 className="owl-item"
                 style={{
                   width: "100%",
-                  maxWidth: "100%", 
+                  maxWidth: "10%", 
                 }}
               >
                 <div className="portfolio-4-item">
