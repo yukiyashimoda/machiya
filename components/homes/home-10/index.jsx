@@ -144,12 +144,12 @@ export default function Home10({ onePage = false, dark = false }) {
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
       <section
         className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
+          dark ? "bg-dark-1 light-content mt-o pt-0" : ""
         }`}
         id="services"
       >
         <section
-        className={`page-section  scrollSpysection  overflow-hidden  ${
+        className={`page-section  scrollSpysection  overflow-hidden mt-0 pt-0  ${
           dark ? "bg-dark-1 light-content" : ""
         }`}
         id="portfolio"

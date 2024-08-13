@@ -1,12 +1,11 @@
-"use client";
 import { portfolioItems } from "@/data/portfolio";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+
 export default function Portfolio() {
   return (
     <div className="container">
-      
       {/* Portfolio Carousel */}
       <div className="fadeInUp">
         <div className="relative">
@@ -39,7 +38,14 @@ export default function Portfolio() {
           >
             {/* Team item */}
             {portfolioItems.map((item, index) => (
-              <SwiperSlide className="owl-item" key={index}>
+              <SwiperSlide
+                key={index}
+                className="owl-item"
+                style={{
+                  width: "100%",
+                  maxWidth: "50%", // デスクトップ表示のときに50%に制限
+                }}
+              >
                 <div className="portfolio-4-item">
                   <a href={item.href}>
                     <div className="portfolio-4-image">
@@ -51,8 +57,12 @@ export default function Portfolio() {
                       />
                     </div>
                     <div className="portfolio-4-intro">
-                      <div className="font-alt sub3 portfolio-4-title">{item.title}</div>
-                      <div className="font-alt sub4 portfolio-4-descr">{item.descr}</div>
+                      <div className="font-alt sub3 portfolio-4-title">
+                        {item.title}
+                      </div>
+                      <div className="font-alt sub4 portfolio-4-descr">
+                        {item.descr}
+                      </div>
                     </div>
                   </a>
                 </div>
