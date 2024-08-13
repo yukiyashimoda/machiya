@@ -66,7 +66,7 @@ export default function Blog() {
                   />
                 </Link>
               </div>
-              <h3 className="post-prev-2-title sub4">
+              <h3 className="post-prev-2-title sub3">
                 <Link href={`/news/${post.id}`}>
                   {post.title}
                 </Link>
