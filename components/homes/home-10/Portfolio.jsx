@@ -43,7 +43,7 @@ export default function Portfolio() {
                 className="owl-item"
                 style={{
                   width: "100%",
-                  maxWidth: "70%", // デスクトップ表示のときに50%に制限
+                  maxWidth: "100%", 
                 }}
               >
                 <div className="portfolio-4-item">

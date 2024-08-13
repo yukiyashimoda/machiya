@@ -1,7 +1,7 @@
 export const portfolioItems = [
   {
     id: 1,
-    href: "",
+    href: "/assets/images/demo-strong/portfolio/1.png",
     imgSrc: "/assets/images/demo-strong/portfolio/1.png",
     imgAlt: "Image Description",
     title: "うな重",
@@ -9,7 +9,7 @@ export const portfolioItems = [
   },
   {
     id: 2,
-    href: "",
+    href: "/assets/images/demo-strong/portfolio/2.png",
     imgSrc: "/assets/images/demo-strong/portfolio/2.png",
     imgAlt: "Image Description",
     title: "店内の様子",
@@ -17,7 +17,7 @@ export const portfolioItems = [
   },
   {
     id: 3,
-    href: "",
+    href: "/assets/images/demo-strong/portfolio/3.png",
     imgSrc: "/assets/images/demo-strong/portfolio/3.png",
     imgAlt: "",
     title: "ひつまぶし",
@@ -25,7 +25,7 @@ export const portfolioItems = [
   },
   {
     id: 4,
-    href: "",
+    href: "/assets/images/demo-strong/portfolio/4.png",
     imgSrc: "/assets/images/demo-strong/portfolio/4.png",
     imgAlt: "Image Description",
     title: "カウンター席",
@@ -33,7 +33,7 @@ export const portfolioItems = [
   },
   {
     id: 5,
-    href: "",
+    href: "/assets/images/demo-strong/portfolio/5.png",
     imgSrc: "/assets/images/demo-strong/portfolio/5.png",
     imgAlt: "Image Description",
     title: "駐車場完備",
@@ -41,7 +41,7 @@ export const portfolioItems = [
   },
   {
     id: 6,
-    href: "",
+    href: "/assets/images/demo-strong/portfolio/6.png",
     imgSrc: "/assets/images/demo-strong/portfolio/6.png",
     imgAlt: "Image Description",
     title: "当店のこだわり",
