@@ -137,6 +137,20 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
 
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-9JFH8PN2J3`}></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-9JFH8PN2J3', {
+              page_path: window.location.pathname,
+            });
+           `,
+          }}
+        />
+
       </head>
       
       <body className="appear-animate body">{children}</body>
