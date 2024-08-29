@@ -73,7 +73,7 @@ export default function ModernBlogSinglePage({ params }) {
 
   return (
     <>
-      <div className="theme-modern">
+      <div className="theme-modern" >
         <div className="page" id="top">
           <nav className="main-nav dark stick-fixed">
             <Header10 links={strongMultiPages} />
@@ -159,8 +159,8 @@ export default function ModernBlogSinglePage({ params }) {
                           </span>
                         </div>
                         <p
-                          className="font-alt sub4"
-                          style={{ fontSize: "14px" }} // フォントサイズを小さく指定
+                          className="font-global sub4"
+                          style={{ fontSize: "7px" }} // フォントサイズを小さく指定
                           dangerouslySetInnerHTML={{ __html: post.body }}
                         />
                       </div>
