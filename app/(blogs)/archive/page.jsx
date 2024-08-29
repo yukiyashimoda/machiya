@@ -76,11 +76,11 @@ export default function StrongBlogPage() {
               <div className="container position-relative pt-sm-30">
                 {/* Home Section Content */}
                 <div className="home-content text-center">
-                  <h1 className="hs-title-7 mb-0">
+                  <h6 className="hs-title-3 mb-0 mt-5">
                     <span className="charsAnimIn-2" data-splitting="chars">
                       <span className="font-alt">お知らせ</span>
                     </span>
-                  </h1>
+                  </h6>
                 </div>
                 {/* End Home Section Content */}
               </div>

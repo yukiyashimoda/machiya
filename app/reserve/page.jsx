@@ -42,9 +42,9 @@ export default function StrongContactPage() {
               <div className="container position-relative pt-sm-0">
                 {/* Home Section Content */}
                 <div className="home-content text-center">
-                  <h6 className="hs-title-3 mb-0">
+                  <h6 className="hs-title-3 mb-0 mt-5">
                     <span className=" charsAnimIn-2 font-alt" data-splitting="chars">
-                      予約はこちら
+                      ご予約はこちら
                     </span>
                   </h6>
                 </div>

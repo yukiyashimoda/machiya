@@ -99,9 +99,9 @@ export default function ModernBlogSinglePage({ params }) {
                   </div>
                   <hr className="white mt-0 mb-0" />
                 </div>
-                <h1 className="section-title-large font-alt uppercase mb-0 fadeRotateIn">
+                <h6 className="section-title-large font-alt uppercase mb-0 mt-5 fadeRotateIn">
                   {post.title}
-                </h1>
+                </h6>
                 {/* Author, Categories, Comments */}
                 <div
                   className="blog-item-data mt-30 mt-sm-10 mb-0 fadeInUp"
