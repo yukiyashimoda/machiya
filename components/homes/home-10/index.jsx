@@ -61,13 +61,13 @@ function ReserveModal({ isOpen, onClose }) {
             position: "absolute",
             top: "10px",
             right: "10px",
-            background: "transparent",
+            background: "white",
             border: "none",
             fontSize: "1.5rem",
             cursor: "pointer",
           }}
         >
-          &times;
+          close&times;
         </button>
         <iframe
           ref={iframeRef}
