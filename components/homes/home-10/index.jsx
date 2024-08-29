@@ -122,7 +122,7 @@ export default function Home10({ onePage = false, dark = false }) {
                       </span>
                     </Link>
                     <Link
-                      href={`https://select-type.com/rsv/?id=304fIyuZ3Ko&c_id=363690${dark ? "-dark" : ""}`}
+                      href={`/reserve${dark ? "-dark" : ""}`}
                       className="btn btn-mod btn-white btn-large btn-round btn-hover-anim m-1"
                     >
                       <span className="font-alt">

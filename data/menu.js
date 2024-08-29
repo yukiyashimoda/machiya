@@ -3,7 +3,7 @@ export const strongMultiPages = [
   { href: "/about", text: "当店について", className: "active" },
   { href: "/menu", text: "お品書き" },
   { href: "/archive", text: "お知らせ" },
-  { href: "https://select-type.com/rsv/?id=304fIyuZ3Ko&c_id=363688", text: "ご予約はこちら" },
+  { href: "/reserve", text: "ご予約はこちら" },
 ];
 export const strongMultiPagesDark = [
   { href: "/strong-multi-page", text: "Home" },
