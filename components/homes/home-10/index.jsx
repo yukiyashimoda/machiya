@@ -114,11 +114,20 @@ export default function Home10({ onePage = false, dark = false }) {
                   <>
                     <Link
                       href={`/about${dark ? "-dark" : ""}`}
-                      className="btn btn-mod btn-white btn-large btn-round btn-hover-anim"
+                      className="btn btn-mod btn-white btn-large btn-round btn-hover-anim m-1"
                     >
                       <span className="font-alt">
                         詳細を見る
                         <span className="visually-hidden">About Us</span>
+                      </span>
+                    </Link>
+                    <Link
+                      href={`https://select-type.com/rsv/?id=304fIyuZ3Ko&c_id=363690${dark ? "-dark" : ""}`}
+                      className="btn btn-mod btn-white btn-large btn-round btn-hover-anim m-1"
+                    >
+                      <span className="font-alt">
+                        ご予約はこちら
+                        <span className="visually-hidden">reserve</span>
                       </span>
                     </Link>
                   </>
