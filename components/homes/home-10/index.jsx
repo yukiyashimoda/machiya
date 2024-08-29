@@ -34,7 +34,7 @@ function ReserveModal({ isOpen, onClose }) {
     style={{
       position: "fixed",
       top: "10%", // 画面上部に15%のマージンを設定
-      bottom: "15px",
+      bottom: "10px",
       left: "0",
       width: "100%",
       height: "100%", // モーダルの高さを85%に設定
