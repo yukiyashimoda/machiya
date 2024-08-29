@@ -1,14 +1,89 @@
 "use client";
 
-
+import React, { useEffect, useState, useRef } from "react";
 import Service from "./Service";
 import Portfolio from "./Portfolio";
 import Blog from "./Blog";
 import Link from "next/link";
-import { useEffect } from "react";
 import Image from "next/image";
 
+// モーダルコンポーネントを作成
+function ReserveModal({ isOpen, onClose }) {
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const iframe = iframeRef.current;
+    let lastSrc = iframe.src;
+
+    const intervalId = setInterval(() => {
+      if (iframe.src !== lastSrc) {
+        lastSrc = iframe.src;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }, 500);
+
+    return () => clearInterval(intervalId);
+  }, [isOpen]);
+
+  if (!isOpen) return null;
+
+  return (
+    <div
+    style={{
+      position: "fixed",
+      top: "10%", // 画面上部に15%のマージンを設定
+      bottom: "15px",
+      left: "0",
+      width: "100%",
+      height: "100%", // モーダルの高さを85%に設定
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      display: "flex",
+      alignItems: "flex-start", // モーダルを上に揃える
+      justifyContent: "center",
+      zIndex: 1000,
+    }}
+  >
+      <div
+        style={{
+          position: "relative",
+          width: "90%",
+          maxWidth: "800px",
+          backgroundColor: "#fff",
+          padding: "20px",
+          borderRadius: "8px",
+        }}
+      >
+        <button
+          onClick={onClose}
+          style={{
+            position: "absolute",
+            top: "10px",
+            right: "10px",
+            background: "transparent",
+            border: "none",
+            fontSize: "1.5rem",
+            cursor: "pointer",
+          }}
+        >
+          &times;
+        </button>
+        <iframe
+          ref={iframeRef}
+          width="100%"
+          height="600px"
+          src="https://select-type.com/rsv/?id=304fIyuZ3Ko&w_flg=1"
+          frameBorder="0"
+        ></iframe>
+      </div>
+    </div>
+  );
+}
+
 export default function Home10({ onePage = false, dark = false }) {
+  const [isModalOpen, setModalOpen] = useState(false);
+
   useEffect(() => {
     const addPaddingLeft = () => {
       const paddingLeftElement = document.getElementById("paddingLeft");
@@ -42,12 +117,13 @@ export default function Home10({ onePage = false, dark = false }) {
     };
   }, []);
 
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
   return (
     <>
       <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        }`}
+        className={`page-section scrollSpysection ${dark ? "bg-dark-1 light-content" : ""}`}
         id="about"
       >
         <div className="container">
@@ -55,7 +131,7 @@ export default function Home10({ onePage = false, dark = false }) {
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 className="font-alt section-caption-border">当店について</h2>
               <h3 className="section-title-strong mb-60 mb-sm-50 mt-60">
-                <span className="font-alt block ">国産鰻の逸品と<br />銘酒を堪能。</span> 
+                <span className="font-alt block">国産鰻の逸品と<br />銘酒を堪能。</span> 
               </h3>
             </div>
           </div>
@@ -69,7 +145,7 @@ export default function Home10({ onePage = false, dark = false }) {
                     height={692}
                     src="/assets/images/demo-strong/section-image-1.png"
                     alt="Image description"
-                    className=" scaleOutIn"
+                    className="scaleOutIn"
                     data-wow-duration="1.2s"
                   />
                 </div>
@@ -90,10 +166,10 @@ export default function Home10({ onePage = false, dark = false }) {
             <div className="col-sm-8 col-lg-6 col-xl-4 offset-xl-1 mt-0">
               <div className="linesAnimIn" data-splitting="lines">
                 <p className="lead font-alt mt-5 mb-5 text-sm font-bold">
-                市電ロープウェイ入口駅1分。<br />国産鰻を使用。<br />昼はふっくら鰻重を、<br />夜は鰻の逸品と銘酒を<br />ご堪能ください。
+                  市電ロープウェイ入口駅1分。<br />国産鰻を使用。<br />昼はふっくら鰻重を、<br />夜は鰻の逸品と銘酒を<br />ご堪能ください。
                 </p>
                 <p className="font-alt mb-5">
-                和風情緒あふれる<br />落ち着いた雰囲気の店内には、<br />カウンター席とテーブル席を完備。<br />卓を繋げて10名様前後で座れるので、<br />ご家族3世代でのご利用もおすすめです。
+                  和風情緒あふれる<br />落ち着いた雰囲気の店内には、<br />カウンター席とテーブル席を完備。<br />卓を繋げて10名様前後で座れるので、<br />ご家族3世代でのご利用もおすすめです。
                 </p>
               </div>
 
@@ -121,15 +197,15 @@ export default function Home10({ onePage = false, dark = false }) {
                         <span className="visually-hidden">About Us</span>
                       </span>
                     </Link>
-                    <Link
-                      href={`/reserve${dark ? "-dark" : ""}`}
+                    <button
+                      onClick={openModal}
                       className="btn btn-mod btn-white btn-large btn-round btn-hover-anim m-1"
                     >
                       <span className="font-alt">
                         ご予約はこちら
                         <span className="visually-hidden">reserve</span>
                       </span>
-                    </Link>
+                    </button>
                   </>
                 )}
               </div>
@@ -152,53 +228,43 @@ export default function Home10({ onePage = false, dark = false }) {
       </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
       <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content mt-o pt-0" : ""
-        }`}
+        className={`page-section scrollSpysection ${dark ? "bg-dark-1 light-content mt-o pt-0" : ""}`}
         id="services"
       >
         <section
-        className={`page-section  scrollSpysection  overflow-hidden mt-0 pt-0  ${
-          dark ? "bg-dark-1 light-content" : ""
-        }`}
-        id="portfolio"
-      >
-        <Portfolio />
-      </section>
+          className={`page-section scrollSpysection overflow-hidden mt-0 pt-0 ${dark ? "bg-dark-1 light-content" : ""}`}
+          id="portfolio"
+        >
+          <Portfolio />
+        </section>
 
         <div className="container">
           <div className="row">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 className="font-alt section-caption-border">お品書き</h2>
-              <h3 className="section-title-strong mb-90 mb-sm-50">
-                  
-              </h3>
+              <h3 className="section-title-strong mb-90 mb-sm-50"></h3>
             </div>
           </div>
-          {/* Nav tabs */}
-
           <Service />
-          {/* End Tab panes */}
         </div>
       </section>
       <section
         className="page-section bg-dark-1 light-content"
         style={{
-          backgroundImage:
-            "url(/assets/images/2.jpg)",
+          backgroundImage: "url(/assets/images/2.jpg)",
         }}
-      ><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      >
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </section>
-         <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
+      <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
       <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        }`}
+        className={`page-section scrollSpysection ${dark ? "bg-dark-1 light-content" : ""}`}
         id="blog"
       >
         <Blog />
       </section>
 
+      <ReserveModal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }
