@@ -94,11 +94,11 @@ export default function Service() {
                  <span class="price"><div className="sub">極上(二尾)</div>¥7,100</span>
                </li>
                <hr />
-               <li class="item">
+               {/* <li class="item">
                  <span class="name">鰻串一通り<div className="sub">(5本盛り)</div></span>
                  <span class="price">¥1,700</span>
                </li>
-               <hr />
+               <hr /> */}
                <li class="item">
                  <span class="name">骨せんべい</span>
                  <span class="price">¥500</span>
@@ -106,12 +106,12 @@ export default function Service() {
                <hr />
                <li class="item">
                  <span class="name">肝わさび</span>
-                 <span class="price">¥550</span>
+                 <span class="price">¥600</span>
                </li>
                <hr />
                <li class="item">
                  <span class="name">ばら身ポン酢</span>
-                 <span class="price">¥550</span>
+                 <span class="price">¥600</span>
                </li>
                <hr />
              </ul>
@@ -123,12 +123,12 @@ export default function Service() {
               <ul class="food-menu font-alt" >
                <li class="item">
                  <span class="name">うざく<div className="sub">(鰻と胡瓜の酢の物)</div></span>
-                 <span class="price">¥1,000</span>
+                 <span class="price">¥1,300</span>
                </li>
                <hr />
               <li class="item">
                  <span class="name">うまき<div className="sub">(鰻のだし巻き卵)</div></span>
-                 <span class="price">¥1,200</span>
+                 <span class="price">¥1,300</span>
                </li>
                <hr />
                <li class="item">
@@ -194,12 +194,12 @@ export default function Service() {
                <hr />
                <li class="item">
                  <span class="name">京揚げ炭火焼き</span>
-                 <span class="price">¥500</span>
+                 <span class="price">¥550</span>
                </li>
                <hr />
                <li class="item">
                <span class="name">炙り珍味盛合わせ<div className="sub">(鮭とば・エイヒレ・うるめ鰯・畳鰯・ホタルイカ)</div></span>
-                 <span class="price">¥1,250</span>
+                 <span class="price">¥1,350</span>
                </li>
                <hr />
              </ul>
@@ -208,8 +208,8 @@ export default function Service() {
             <div className="sub">甘味</div>
             <ul class="food-menu font-alt" >
                <li class="item">
-                 <span class="name">ほうじ茶プリン</span>
-                 <span class="price">¥600</span>
+                 <span class="name">シャーベット</span>
+                 <span class="price">¥480</span>
                </li>
                <hr />
                <li class="item">
