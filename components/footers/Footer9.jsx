@@ -34,11 +34,11 @@ export default function Footer9() {
       </div>
       {/* Footer Text */}
       <div className="footer-text text-center opacity-75 mt-n10 pb-50 font-alt">
-        市電「ロープウェイ入口駅」徒歩2分。
+        市電「ロープウェイ入口駅」徒歩1分。
         <hr className={`mt-0 mb-0  `} />
 
         〒064-0919 札幌市中央区南19条西15丁目2-7<br />
-        AM11:00-14:00 / PM17:00-22:00<br />
+        AM11:00-15:00 / PM17:00-22:00<br />
         定休日：火曜日
         </div>
         <div className="text-center mb-md-mt-50">

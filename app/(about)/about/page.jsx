@@ -96,7 +96,7 @@ export default function StrongAboutPage() {
           <hr />
           <li className="item">
             <span className="sub3">営業時間</span>
-            <span className="sub4">AM11:00-14:00/PM17:00-22:00</span>
+            <span className="sub4">AM11:00-15:00/PM17:00-22:00</span>
           </li>
           <hr />
           <li className="item">
