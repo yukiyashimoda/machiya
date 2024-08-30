@@ -7,7 +7,7 @@ function ReserveModal({ isOpen, onClose }) {
     <div
       style={{
         position: "fixed",
-        top: "15%",
+        top: "10%",
         bottom: "10px",
         left: "0",
         width: "100%",
