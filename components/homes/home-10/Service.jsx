@@ -248,12 +248,6 @@ export default function Service() {
                  <span class="price">¥1,350</span>
                </li>
                <hr />
-               <div className="col-md-6 col-lg-4">
-               <li class="item">
-                 <span class="name"></span>
-                 <span class="price sub2">その他メニュー取り揃えております。</span>
-               </li>
-               </div>
              </ul>
             </div>
             
