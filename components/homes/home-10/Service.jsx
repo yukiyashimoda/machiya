@@ -365,7 +365,7 @@ export default function Service() {
                
                <div className="sub font-alt">※価格は全て税込みとなっております。<br />
               ※メニューの内容は予告なく変更となる場合がございます。ご了承ください。</div>
-            </div>:
+            </div>
           </div>
         </div>
       </div>{" "}
