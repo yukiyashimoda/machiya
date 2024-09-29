@@ -99,21 +99,26 @@ export default function Service() {
                  <span class="price">¥1,700</span>
                </li>
                <hr /> */}
-               <li class="item">
-                 <span class="name">骨せんべい</span>
-                 <span class="price">¥500</span>
+                <li class="item">
+                 <span class="name">ひれ巻き【串】<div className="sub">人気！おすすめ食材をひれで巻きました</div></span>
+                 <span class="price">¥350</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">肝わさび</span>
-                 <span class="price">¥600</span>
+                 <span class="name">ばら【串】<div className="sub">希少！あばら骨周りの身</div></span>
+                 <span class="price">¥420</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">ばら身ポン酢</span>
-                 <span class="price">¥600</span>
+                 <span class="name">肝焼き【串】<div className="sub">うなぎ屋の定番</div></span>
+                 <span class="price">¥450</span>
+               </li>
+               <li class="item">
+                 <span class="name">短冊【串】<div className="sub">小さな蒲焼き（塩かタレ）</div></span>
+                 <span class="price">¥490</span>
                </li>
                <hr />
+
              </ul>
             </div>
             <div
@@ -121,28 +126,42 @@ export default function Service() {
               data-splitting="lines"
             >
               <ul class="food-menu font-alt" >
+              <li class="item">
+                 <span class="name">鰻の骨せんべい</span>
+                 <span class="price">¥500</span>
+               </li>
+               <hr />
                <li class="item">
-                 <span class="name">うざく<div className="sub">(鰻と胡瓜の酢の物)</div></span>
+                 <span class="name">肝刺し</span>
+                 <span class="price">¥600</span>
+               </li>
+               <hr />
+               <li class="item">
+                 <span class="name">ばら身ポン酢</span>
+                 <span class="price">¥600</span>
+               </li> 
+               <li class="item">
+                 <span class="name">うざく<div className="sub">鰻と胡瓜の酢の物</div></span>
                  <span class="price">¥1,300</span>
                </li>
                <hr />
               <li class="item">
-                 <span class="name">うまき<div className="sub">(鰻のだし巻き卵)</div></span>
+                 <span class="name">うまき<div className="sub">鰻入りだし巻き卵</div></span>
                  <span class="price">¥1,300</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">蒲焼き<div className="sub">(定番)</div></span>
+                 <span class="name">蒲焼き<div className="sub">定番！</div></span>
                  <span class="price">¥3,400</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">白焼き<div className="sub">(わさび・生姜・出汁醤油)</div></span>
+                 <span class="name">白焼き<div className="sub">(生姜醤油とわさび醤油でどうぞ)</div></span>
                  <span class="price">¥3,400</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">塩焼き<div className="sub">(大根おろし・レモン)</div></span>
+                 <span class="name">塩焼き<div className="sub">ありそうでなかった！美味！</div></span>
                  <span class="price">¥3,400</span>
                </li>
                <hr />
@@ -178,13 +197,13 @@ export default function Service() {
             <div className="col-md-6 col-lg-4 mb-sm-30">
             <ul class="food-menu font-alt" >
                <li class="item">
-                 <span class="name">漬物盛り合わせ</span>
+                 <span class="name">青とうがらしタラコ</span>
                  <span class="price">¥600</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">子持ち昆布</span>
-                 <span class="price">¥850</span>
+                 <span class="name">セロリの漬物</span>
+                 <span class="price">¥500</span>
                </li>
                <hr />
                <li class="item">
@@ -193,8 +212,33 @@ export default function Service() {
                </li>
                <hr />
                <li class="item">
+                 <span class="name">海苔巻き梅水晶<div className="sub">サメ軟骨梅肉和え</div></span>
+                 <span class="price">¥550</span>
+               </li>
+               <hr />
+               <li class="item">
+                 <span class="name">わさびで食べる生ハム</span>
+                 <span class="price">¥500</span>
+               </li>
+               <hr />
+               <li class="item">
+                 <span class="name">奈良漬とクリームチーズの西京味噌<div className="sub">クラッカー添え</div></span>
+                 <span class="price">¥600</span>
+               </li>
+               <hr />
+               <li class="item">
                  <span class="name">京揚げ炭火焼き</span>
                  <span class="price">¥550</span>
+               </li>
+               <hr />
+               <li class="item">
+                 <span class="name">しらすと大葉の出汁巻き卵</span>
+                 <span class="price">¥650</span>
+               </li>
+               <hr />
+               <li class="item">
+                 <span class="name">漬物盛り</span>
+                 <span class="price">¥650</span>
                </li>
                <hr />
                <li class="item">
@@ -238,15 +282,21 @@ export default function Service() {
             </div>
             <div className="col-md-6 col-lg-4 mb-sm-30">
             <ul class="food-menu font-alt" >
-            <div className="sub2">ビール</div>
+            
+            <div className="sub2">ハイボール</div>
                <li class="item">
-                 <span class="name">サッポロクラシック生</span>
-                 <span class="price">¥580</span>
+                 <span class="name">スーパーニッカ</span>
+                 <span class="price">¥650</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">サッポロラガー赤星<div className="sub">(中瓶)</div></span>
-                 <span class="price">¥750</span>
+                 <span class="name">竹鶴</span>
+                 <span class="price">¥950</span>
+               </li>
+               <hr />
+               <li class="item">
+                 <span class="name">デュワーズホワイトラベル</span>
+                 <span class="price">¥490</span>
                </li>
                <hr />
                <div className="sub2">ワイン</div>
