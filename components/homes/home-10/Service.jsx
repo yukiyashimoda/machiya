@@ -277,7 +277,17 @@ export default function Service() {
             </div>
             <div className="col-md-6 col-lg-4 mb-sm-30">
             <ul class="food-menu font-alt" >
-            
+            <div className="sub2">ビール</div>
+               <li class="item">
+                 <span class="name">サッポロクラシック<div className="sub">（生）</div></span>
+                 <span class="price">¥580</span>
+               </li>
+               <hr />
+               <li class="item">
+                 <span class="name">サッポロ赤星<div className="sub">(中瓶)</div></span>
+                 <span class="price">¥750</span>
+               </li>
+               <hr />
             <div className="sub2">ハイボール</div>
                <li class="item">
                  <span class="name">スーパーニッカ</span>
