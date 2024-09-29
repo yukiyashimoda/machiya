@@ -113,6 +113,7 @@ export default function Service() {
                  <span class="name">肝焼き【串】<div className="sub">うなぎ屋の定番</div></span>
                  <span class="price">¥450</span>
                </li>
+               <hr />
                <li class="item">
                  <span class="name">短冊【串】<div className="sub">小さな蒲焼き（塩かタレ）</div></span>
                  <span class="price">¥490</span>
@@ -140,6 +141,7 @@ export default function Service() {
                  <span class="name">ばら身ポン酢</span>
                  <span class="price">¥600</span>
                </li> 
+               <hr />
                <li class="item">
                  <span class="name">うざく<div className="sub">鰻と胡瓜の酢の物</div></span>
                  <span class="price">¥1,300</span>
