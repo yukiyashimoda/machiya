@@ -249,9 +249,8 @@ export default function Service() {
              </ul>
             </div>
             <div className="col-md-6 col-lg-4">
-            <div className="sub">甘味</div>
             <ul class="food-menu font-alt" >
-               <li class="item">
+               {/* <li class="item">
                  <span class="name">シャーベット</span>
                  <span class="price">¥480</span>
                </li>
@@ -259,7 +258,7 @@ export default function Service() {
                <li class="item">
                  <span class="name"></span>
                  <span class="price sub2">その他メニュー取り揃えております。</span>
-               </li>
+               </li> */}
              </ul>
                
                <div className="sub font-alt">※価格は全て税込みとなっております。<br />
