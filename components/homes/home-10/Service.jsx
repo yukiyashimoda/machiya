@@ -81,19 +81,20 @@ export default function Service() {
             >
              <ul class="food-menu font-alt" >
                <li class="item">
-                 <span class="name">うな重<div className="sub">(肝吸・お新香付き)</div></span>
+                 <span class="name">うな重<div className="sub">(お吸い物・お新香付き)</div></span>
                  <span class="price"><div className="sub">上(一尾)</div>¥3,980</span>
                  <span class="price"><div className="sub">特上(一尾半)</div>¥5,880</span>
                  <span class="price"><div className="sub">極上(二尾)</div>¥7,570</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">ひつまぶし<div className="sub">(肝吸・お新香・出汁・薬味付き)</div></span>
+                 <span class="name">ひつまぶし<div className="sub">(お吸い物・お新香・出汁・薬味付き)</div></span>
                  <span class="price"><div className="sub">上(一尾)</div>¥4,180</span>
                  <span class="price"><div className="sub">特上(一尾半)</div>¥6,080</span>
                  <span class="price"><div className="sub">極上(二尾)</div>¥7,770</span>
                </li>
                <hr />
+               <div className="sub font-alt">※プラス100円で肝入りのお吸い物にできます。</div><br />
                {/* <li class="item">
                  <span class="name">鰻串一通り<div className="sub">(5本盛り)</div></span>
                  <span class="price">¥1,700</span>
