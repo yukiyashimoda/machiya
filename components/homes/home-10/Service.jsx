@@ -140,7 +140,7 @@ export default function Service() {
               <ul class="food-menu font-alt" >
               <li class="item">
                  <span class="name">まずは！鰻屋の前菜３種</span>
-                 <span class="price"><div className="sub">(一尾)</div>¥690</span>
+                 <span class="price"><div className="sub">(一人前)</div>¥690</span>
                </li>
                <hr />
                <li class="item">
