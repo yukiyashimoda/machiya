@@ -33,7 +33,7 @@ export default function Contact() {
           <hr />
           <li className="item">
             <span className="sub3">勤務時間</span>
-            <span className="sub4">17:00〜22:00</span>
+            <span className="sub4">ランチ・ディナー(時間や曜日は要相談)</span>
           </li>
           <hr />
           <li className="item">
@@ -48,7 +48,7 @@ export default function Contact() {
           <hr />
           <li className="item">
             <span className="sub3">特記事項</span>
-            <span className="sub4">賄いあり・交通費支給</span>
+            <span className="sub4">交通費支給(規定内)</span>
           </li>
           <hr />
         </ul>

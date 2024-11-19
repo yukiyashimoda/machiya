@@ -82,16 +82,16 @@ export default function Service() {
              <ul class="food-menu font-alt" >
                <li class="item">
                  <span class="name">うな重<div className="sub">(肝吸・お新香付き)</div></span>
-                 <span class="price"><div className="sub">上(一尾)</div>¥3,800</span>
-                 <span class="price"><div className="sub">特上(一尾半)</div>¥5,400</span>
-                 <span class="price"><div className="sub">極上(二尾)</div>¥6,900</span>
+                 <span class="price"><div className="sub">上(一尾)</div>¥3,980</span>
+                 <span class="price"><div className="sub">特上(一尾半)</div>¥5,880</span>
+                 <span class="price"><div className="sub">極上(二尾)</div>¥7,570</span>
                </li>
                <hr />
                <li class="item">
                  <span class="name">ひつまぶし<div className="sub">(肝吸・お新香・出汁・薬味付き)</div></span>
-                 <span class="price"><div className="sub">上(一尾)</div>¥4,000</span>
-                 <span class="price"><div className="sub">特上(一尾半)</div>¥5,600</span>
-                 <span class="price"><div className="sub">極上(二尾)</div>¥7,100</span>
+                 <span class="price"><div className="sub">上(一尾)</div>¥4,180</span>
+                 <span class="price"><div className="sub">特上(一尾半)</div>¥6,080</span>
+                 <span class="price"><div className="sub">極上(二尾)</div>¥7,770</span>
                </li>
                <hr />
                {/* <li class="item">
@@ -100,13 +100,23 @@ export default function Service() {
                </li>
                <hr /> */}
                 <li class="item">
+                 <span class="name">鰻串一通り<div className="sub">一押し！5本の盛り合わせ！</div></span>
+                 <span class="price">¥1,850</span>
+               </li>
+               <hr />
+               <li class="item">
+                 <span class="name">鰻串３本盛り<div className="sub">ヒレ巻き、バラ身、肝焼き</div></span>
+                 <span class="price">¥990</span>
+               </li>
+               <hr />
+                <li class="item">
                  <span class="name">ひれ巻き【串】<div className="sub">人気！おすすめ食材をひれで巻きました</div></span>
                  <span class="price">¥350</span>
                </li>
                <hr />
                <li class="item">
                  <span class="name">ばら【串】<div className="sub">希少！あばら骨周りの身</div></span>
-                 <span class="price">¥420</span>
+                 <span class="price">¥360</span>
                </li>
                <hr />
                <li class="item">
@@ -128,23 +138,28 @@ export default function Service() {
             >
               <ul class="food-menu font-alt" >
               <li class="item">
-                 <span class="name">鰻の骨せんべい</span>
+                 <span class="name">まずは！鰻屋の前菜３種(一人前)</span>
+                 <span class="price">¥690</span>
+               </li>
+               <hr />
+               <li class="item">
+                 <span class="name">おすすめ！うなポン酢</span>
+                 <span class="price">¥490</span>
+               </li> 
+               <hr />
+               <li class="item">
+                 <span class="name">おすすめ！肝刺し</span>
+                 <span class="price">¥600</span>
+               </li>
+               <hr />
+              <li class="item">
+                 <span class="name">鰻の骨から揚げ　山椒塩</span>
                  <span class="price">¥500</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">肝刺し</span>
-                 <span class="price">¥600</span>
-               </li>
-               <hr />
-               <li class="item">
-                 <span class="name">ばら身ポン酢</span>
-                 <span class="price">¥600</span>
-               </li> 
-               <hr />
-               <li class="item">
                  <span class="name">うざく<div className="sub">鰻と胡瓜の酢の物</div></span>
-                 <span class="price">¥1,300</span>
+                 <span class="price">¥1,200</span>
                </li>
                <hr />
               <li class="item">
@@ -153,18 +168,18 @@ export default function Service() {
                </li>
                <hr />
                <li class="item">
-                 <span class="name">蒲焼き<div className="sub">定番！</div></span>
-                 <span class="price">¥3,400</span>
+                 <span class="name">蒲焼き 一尾<div className="sub">定番！</div></span>
+                 <span class="price">¥3,680</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">白焼き<div className="sub">(生姜醤油とわさび醤油でどうぞ)</div></span>
-                 <span class="price">¥3,400</span>
+                 <span class="name">白焼き 一尾<div className="sub">(生姜醤油とわさび醤油でどうぞ)</div></span>
+                 <span class="price">¥3,680</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">塩焼き<div className="sub">ありそうでなかった！美味！</div></span>
-                 <span class="price">¥3,400</span>
+                 <span class="name">塩焼き 一尾<div className="sub">ありそうでなかった！美味！</div></span>
+                 <span class="price">¥3,680</span>
                </li>
                <hr />
                <li class="item">
@@ -283,7 +298,22 @@ export default function Service() {
             </div>
             <div className="col-md-6 col-lg-4 mb-sm-30">
             <ul class="food-menu font-alt" >
-            
+            <div className="sub2">ビール</div>
+               <li class="item">
+                 <span class="name">サッポロクラシック生</span>
+                 <span class="price">¥590</span>
+               </li>
+               <hr />
+               <li class="item">
+                 <span class="name">サッポロ赤星（中瓶）</span>
+                 <span class="price">¥770</span>
+               </li>
+               <hr />
+               <li class="item">
+                 <span class="name">サッポロエビス（中瓶）</span>
+                 <span class="price">¥950</span>
+               </li>
+               <hr />
             <div className="sub2">ハイボール</div>
                <li class="item">
                  <span class="name">スーパーニッカ</span>
@@ -291,75 +321,43 @@ export default function Service() {
                </li>
                <hr />
                <li class="item">
-                 <span class="name">竹鶴</span>
-                 <span class="price">¥950</span>
-               </li>
-               <hr />
-               <li class="item">
                  <span class="name">デュワーズホワイトラベル</span>
                  <span class="price">¥490</span>
                </li>
                <hr />
-               <div className="sub2">ワイン</div>
                <li class="item">
-               <span class="name">グラスワイン<div className="sub">(赤・白)</div></span>
-                 <span class="price">¥650</span>
-               </li>
-               <div className="sub">グラスワイン各種ご用意しております。お気軽にお申し付けください。</div>
-               <hr />
-               <div className="sub2">焼酎</div>
-               <li class="item">
-               <span class="name">いも麹<div className="sub">(芋)</div></span>
-                 <span class="price">¥550</span>
-               </li>
-               <hr />
-               <li class="item">
-               <span class="name">賢者の選択<div className="sub">(麦)</div></span>
-                 <span class="price">¥550</span>
-               </li>
-               <hr />
-               <li class="item">
-               <span class="name">吟香露<div className="sub">(米)</div></span>
-                 <span class="price">¥550</span>
+                 <span class="name">竹鶴</span>
+                 <span class="price">¥950</span>
                </li>
                <hr />
              </ul>
             </div>
             <div className="col-md-6 col-lg-4">
             <ul class="food-menu font-alt" >
-            <div className="sub2">日本酒</div>
+            <div className="sub2">ワイン</div>
                <li class="item">
-               <span class="name">上川大雪 十勝 純米<div className="sub">帯広市</div></span>
-                 <span class="price"><div className="sub">グラス</div>¥620</span>
-                 <span class="price"><div className="sub">一合</div>¥1190</span>
+               <span class="name">グラス各種<div className="sub">(赤・白)</div></span>
+                 <span class="price">¥670〜</span>
+               </li>
+               <div className="sub">グラスワイン各種ご用意しております。お気軽にお申し付けください。</div>
+               <hr />
+               <div className="sub2">焼酎</div>
+               <li class="item">
+               <span class="name">各種<div className="sub">(芋・麦・米)</div></span>
+                 <span class="price">¥550〜</span>
                </li>
                <hr />
+               <div className="sub2">日本酒</div>
                <li class="item">
-               <span class="name">三千櫻 彗星55 純米吟醸<div className="sub">東川町</div></span>
-                 <span class="price"><div className="sub">グラス</div>¥770</span>
-                 <span class="price"><div className="sub">一合</div>¥1490</span>
+               <span class="name">各種</span>
+               <span class="price"><div className="sub">グラス</div>620〜</span>
+               <span class="price"><div className="sub">一合</div>¥1,190〜</span>
                </li>
                <hr />
+               <div className="sub2">ソフトドリンク</div>
                <li class="item">
-               <span class="name">北の錦 冬花火 純米大吟醸<div className="sub">栗山町</div></span>
-                 <span class="price"><div className="sub">グラス</div>¥800</span>
-                 <span class="price"><div className="sub">一合</div>¥1550</span>
-               </li>
-               <hr />
-               <li class="item">
-               <span class="name">北力 うすにごり生 限定<div className="sub">倶知安町</div></span>
-                 <span class="price"><div className="sub">グラス</div>¥720</span>
-                 <span class="price"><div className="sub">一合</div>¥1390</span>
-               </li>
-               <hr />
-               <li class="item">
-               <span class="name">五色彩雲 Ashirii 純米白こうじ<div className="sub">釧路市</div></span>
-                 <span class="price"><div className="sub">四合</div>¥4500</span>
-               </li>
-               <hr />
-               <li class="item">
-                 <span class="name"></span>
-                 <span class="price sub2">その他メニュー取り揃えております。</span>
+               <span class="name">各種<div className="sub"></div></span>
+                 <span class="price">¥390〜</span>
                </li>
              </ul>
                
