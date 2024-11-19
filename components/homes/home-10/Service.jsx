@@ -100,7 +100,7 @@ export default function Service() {
                </li>
                <hr /> */}
                 <li class="item">
-                 <span class="name">鰻串一通り<div className="sub">一押し！5本の盛り合わせ！</div></span>
+                 <span class="name">鰻串一通り<div className="sub">一押し!5本の盛り合わせ!</div></span>
                  <span class="price">¥1,850</span>
                </li>
                <hr />
@@ -153,7 +153,7 @@ export default function Service() {
                </li>
                <hr />
               <li class="item">
-                 <span class="name">鰻の骨から揚げ　山椒塩</span>
+                 <span class="name">鰻の骨から揚げ 山椒塩</span>
                  <span class="price">¥500</span>
                </li>
                <hr />
