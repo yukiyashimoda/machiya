@@ -139,8 +139,8 @@ export default function Service() {
             >
               <ul class="food-menu font-alt" >
               <li class="item">
-                 <span class="name">まずは！鰻屋の前菜３種(一人前)</span>
-                 <span class="price">¥690</span>
+                 <span class="name">まずは！鰻屋の前菜３種</span>
+                 <span class="price"><div className="sub">(一尾)</div>¥690</span>
                </li>
                <hr />
                <li class="item">
@@ -169,18 +169,18 @@ export default function Service() {
                </li>
                <hr />
                <li class="item">
-                 <span class="name">蒲焼き 一尾<div className="sub">定番！</div></span>
-                 <span class="price">¥3,680</span>
+                 <span class="name">蒲焼き<div className="sub">定番！</div></span>
+                 <span class="price"><div className="sub">(一尾)</div>¥3,680</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">白焼き 一尾<div className="sub">(生姜醤油とわさび醤油でどうぞ)</div></span>
-                 <span class="price">¥3,680</span>
+                 <span class="name">白焼き<div className="sub">(生姜醤油とわさび醤油でどうぞ)</div></span>
+                 <span class="price"><div className="sub">(一尾)</div>¥3,680</span>
                </li>
                <hr />
                <li class="item">
-                 <span class="name">塩焼き 一尾<div className="sub">ありそうでなかった！美味！</div></span>
-                 <span class="price">¥3,680</span>
+                 <span class="name">塩焼き<div className="sub">ありそうでなかった！美味！</div></span>
+                 <span class="price"><div className="sub">(一尾)</div>¥3,680</span>
                </li>
                <hr />
                <li class="item">
