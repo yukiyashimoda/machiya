@@ -33,7 +33,7 @@ export default function Header10({ links }) {
         <ul className="clearlist scroll-nav local-scroll scrollspyLinks">
           <Nav links={links} />
         </ul>
-        <ul className="items-end clearlist local-scroll">
+        {/* <ul className="items-end clearlist local-scroll">
           {links[0].href.includes("/") ? (
             <li>
               <Link
@@ -54,7 +54,7 @@ export default function Header10({ links }) {
               </a>
             </li>
           )}
-        </ul>
+        </ul> */}
       </div>
       {/* End Main Menu */}
     </div>
